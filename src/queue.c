@@ -78,6 +78,7 @@ void unlock(Queue *queue) {
 }
 
 int getSize(Queue *queue) {
+	wait(queue);
 	return queue->size;
 }
 

@@ -64,6 +64,7 @@ void createThreads(void *function, pthread_t threads[], int amount) {
 
 void *cpuThread(void *args) {
 	printf("cpu thread ran %d \n", args);
+
 }
 
 void *ioThread(void *args) {
