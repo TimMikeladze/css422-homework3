@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-#include "phase.h";
+#include "phase.h"
 
 #define MAX_PHASES 20
 

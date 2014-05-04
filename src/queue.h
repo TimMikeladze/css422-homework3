@@ -18,8 +18,8 @@ typedef struct Queue {
 	Job (*dequeue)(struct Queue*);
 	Job (*peek)(struct Queue*);
 	void (*printQueue)(struct Queue*);
-	void (*lock)(struct Queue*);
-	void (*unlock)(struct Queue*);
+	void (*wait)(struct Queue*);
+	int (*getSize)(struct Queue*);
 } Queue;
 
 Queue createQueue();
@@ -27,5 +27,5 @@ void enqueue(Queue *queue, Job job);
 Job dequeue(Queue *queue);
 Job peek(Queue *queue);
 void printQueue(Queue *queue);
-void lock(Queue *queue);
-void unlock(Queue *queue);
+void wait(Queue *queue);
+int getSize(Queue *queue);
