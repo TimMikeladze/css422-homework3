@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 #include "job.h"
 
 typedef struct Node {
@@ -11,11 +12,15 @@ typedef struct Queue {
 	Node *head;
 	Node *tail;
 	int size;
+	bool locked;
 
 	void (*enqueue)(struct Queue*, struct Job);
 	Job (*dequeue)(struct Queue*);
 	Job (*peek)(struct Queue*);
 	void (*printQueue)(struct Queue*);
+	bool (*isLocked)(struct Queue*);
+	void (*lock)(struct Queue*);
+	void (*unlock)(struct Queue*);
 } Queue;
 
 Queue createQueue();
@@ -23,3 +28,6 @@ void enqueue(Queue *queue, Job job);
 Job dequeue(Queue *queue);
 Job peek(Queue *queue);
 void printQueue(Queue *queue);
+bool isLocked(Queue *queue);
+void lock(Queue *queue);
+void unlock(Queue *queue);
