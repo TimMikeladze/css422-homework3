@@ -113,10 +113,10 @@ Job createRandomJob(int min, int max) {
 	int i = 0;
 	for(i = 0; i < numberOfPhases; i++) {
 		int duration = generateRandom(1, 15);
-		Phase p;
-		p.duration = duration;
-		p.phaseType = duration % 2 == 0 ? CPU_PHASE : IO_PHASE;
-		phases[i] = p;
+		Phase phase;
+		phase.duration = duration;
+		phase.type = duration % 2 == 0 ? CPU_PHASE : IO_PHASE;
+		phases[i] = phase;
 	}
 
 	return createJob(phases);

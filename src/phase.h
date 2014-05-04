@@ -3,7 +3,7 @@ typedef enum {
 } PhaseType;
 
 typedef struct Phase {
-	PhaseType phaseType;
+	PhaseType type;
 	int duration;
 } Phase;
 
