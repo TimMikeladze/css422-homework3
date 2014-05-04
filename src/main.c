@@ -11,8 +11,9 @@
 #define MIN_NUMBER_OF_PHASES 2
 #define MAX_NUMBER_OF_PHASES 2
 #define MAX_DURATION 15
-#define MAX_CREATION_RATE 4
 #define MIN_CREATION_RATE 3
+#define MAX_CREATION_RATE 4
+
 
 void createQueues();
 void setupThreads();
@@ -40,7 +41,7 @@ pthread_t submissionThreads[NUMBER_OF_SUBMISSION_THREADS];
 
 int main(void) {
 	srand(time(NULL));
-
+	/*
 	createQueues();
 
 	setupThreads();
@@ -57,8 +58,11 @@ int main(void) {
 	printf("All threads complete.\n");
 
 	cleanupThreads();
+	*/
 
-	createRandomJob();
+	Job j = createRandomJob();
+
+	j.printJob(&j);
 	return EXIT_SUCCESS;
 }
 
@@ -204,7 +208,7 @@ Job createRandomJob() {
 		phases[i] = phase;
 	}
 
-	return createJob(phases);
+	return createJob(phases, numberOfPhases);
 }
 
 int generateRandom(int min, int max) {

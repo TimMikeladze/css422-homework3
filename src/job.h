@@ -11,9 +11,11 @@ typedef struct Job {
 	Phase phases[MAX_PHASES];
 	Phase *currentPhase;
 	bool finished;
+	int phaseIndex;
+	int numberOfPhases;
 
 	void (*printJob)(struct Job*);
 } Job;
 
-Job createJob(Phase phases[]);
+Job createJob(Phase phases[], int numberOfPhases);
 void printJob(Job *job);
