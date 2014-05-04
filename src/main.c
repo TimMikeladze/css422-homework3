@@ -5,15 +5,15 @@
 #include <time.h>
 #include "queue.h"
 
-#define NUMBER_OF_CPU_THREADS 3
-#define NUMBER_OF_IO_THREADS 3
-#define NUMBER_OF_SUBMISSION_THREADS 3
+#define NUMBER_OF_CPU_THREADS 8
+#define NUMBER_OF_IO_THREADS 4
+#define NUMBER_OF_SUBMISSION_THREADS 4
 #define MIN_NUMBER_OF_PHASES 2
-#define MAX_NUMBER_OF_PHASES 3
-#define MAX_DURATION 15
+#define MAX_NUMBER_OF_PHASES 5
+#define MAX_DURATION 7
 #define MIN_CREATION_RATE 3
 #define MAX_CREATION_RATE 4
-#define MAX_JOBS 20
+#define MAX_JOBS_PER_THREAD 40
 
 void createQueues();
 void setupThreads();
@@ -74,7 +74,8 @@ void *cpuThread(void *args) {
 		if (cpuQueue.getSize(&cpuQueue) > 0) {
 			Job job = cpuQueue.dequeue(&cpuQueue);
 			printf("Job %d taken off of CPU Queue by CPU Thread %d\n", job.id, args);
-			job.printJob(&job);
+			printf("Job %d executing on CPU Thread %d\n", job.id, args);
+			//job.printJob(&job);
 			sleep(job.currentPhase(&job).duration);
 			job.nextPhase(&job);
 			if (job.currentPhase(&job).type == IO_PHASE) {
@@ -93,7 +94,8 @@ void *ioThread(void *args) {
 		if (ioQueue.getSize(&ioQueue) > 0) {
 			Job job = ioQueue.dequeue(&ioQueue);
 			printf("Job %d taken off of IO Queue by IO Thread %d\n", job.id, args);
-			job.printJob(&job);
+			printf("Job %d executing on IO Thread %d\n", job.id, args);
+			//job.printJob(&job);
 			sleep(job.currentPhase(&job).duration);
 			job.nextPhase(&job);
 			if (job.currentPhase(&job).type == CPU_PHASE) {
@@ -114,10 +116,10 @@ void *submissionThread(void *args) {
 	int t = currentTime();
 	int i = 0;
 	while (true) {
-		if (currentTime() > t + rate && i < MAX_JOBS) {
+		if (currentTime() > t + rate && i < MAX_JOBS_PER_THREAD) {
 			t = currentTime();
 			Job job = createRandomJob();
-			job.printJob(&job);
+			//job.printJob(&job);
 			if (job.currentPhase(&job).type == CPU_PHASE) {
 				cpuQueue.enqueue(&cpuQueue, job);
 				printf("Job %d put on CPU Queue by Submission Thread %d\n", job.id, args);
@@ -187,8 +189,10 @@ Job createRandomJob() {
 
 		phases[i] = phase;
 	}
-
-	return createJob(phases, numberOfPhases);
+	Job job = createJob(phases, numberOfPhases);
+	printf("Created Job %d\n", job.id);
+	job.printJob(&job);
+	return job;
 }
 
 int generateRandom(int min, int max) {

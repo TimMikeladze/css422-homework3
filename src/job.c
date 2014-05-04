@@ -22,7 +22,7 @@ Job createJob(Phase phases[], int numberOfPhases) {
 void printJob(Job *job) {
 	char *completed = job->finished ? "Yes" : "No";
 	int remaining = job->numberOfPhases - job->phaseIndex - 1;
-	printf("Job: %d, Phases: %d, Phase Index: %d, Remaining: %d, Completed: %s\n", job->id, job->numberOfPhases, job->phaseIndex, remaining, completed);
+	printf("Job %d, Phases: %d, Phase Index: %d, Remaining: %d, Completed: %s\n", job->id, job->numberOfPhases, job->phaseIndex, remaining, completed);
 	int i = 0;
 	for (i = 0; i < job->numberOfPhases; i++) {
 		char *highlight = job->phaseIndex == i ? "*" : " ";
