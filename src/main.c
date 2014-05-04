@@ -16,8 +16,8 @@ void cleanupThreads();
 void createThreads(void *function, pthread_t threads[], int amount);
 Job createRandomJob(int min, int max);
 void *cpuThread(void *args);
-void *ioThread();
-void *submissionThread();
+void *ioThread(void *args);
+void *submissionThread(void *args);
 int getTime();
 int generateRandom(int min, int max);
 
@@ -40,11 +40,13 @@ int main(void) {
 	createQueues();
 	setupThreads();
 
-	createThreads(submissionThread, submissionThreads, NUMBER_OF_SUBMISSION_THREADS);
 	createThreads(cpuThread, cpuThreads, NUMBER_OF_CPU_THREADS);
+	createThreads(ioThread, ioThreads, NUMBER_OF_IO_THREADS);
+	createThreads(submissionThread, submissionThreads, NUMBER_OF_SUBMISSION_THREADS);
 
-	waitForThreads(submissionThreads);
 	waitForThreads(cpuThreads);
+	waitForThreads(ioThreads);
+	waitForThreads(submissionThreads);
 
 	printf("All threads complete.\n");
 
@@ -67,12 +69,12 @@ void *cpuThread(void *args) {
 	printf("cpu thread ran %d \n", args);
 }
 
-void *ioThread() {
-	printf("io thread ran\n");
+void *ioThread(void *args) {
+	printf("io thread ran %d \n", args);
 }
 
-void *submissionThread() {
-	printf("submission thread ran\n");
+void *submissionThread(void *args) {
+	printf("submission thread ran %d \n", args);
 }
 
 void createQueues() {
