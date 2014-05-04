@@ -1,22 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include "phase.h";
 
-#define NUMBER_OF_PHASES 2
+#define MAX_PHASES 20
 
-typedef enum {
-	CPU, IO, FINISHED
-} Phase;
 
 typedef struct Job {
 	int id;
-	int durations[NUMBER_OF_PHASES];
-	Phase phase;
-
+	Phase phases[MAX_PHASES];
+	Phase *currentPhase;
 	bool finished;
 
 	void (*printJob)(struct Job*);
 } Job;
 
-Job createJob(int phases[]);
+Job createJob(Phase phases[]);
 void printJob(Job *job);

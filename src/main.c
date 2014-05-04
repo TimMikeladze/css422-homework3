@@ -107,8 +107,18 @@ void cleanupThreads() {
 }
 
 Job createRandomJob(int min, int max) {
-	int phases[NUMBER_OF_PHASES] = { generateRandom(min, max), generateRandom(
-			min, max) };
+	int numberOfPhases = generateRandom(2, MAX_PHASES);
+	Phase phases[numberOfPhases];
+
+	int i = 0;
+	for(i = 0; i < numberOfPhases; i++) {
+		int duration = generateRandom(1, 15);
+		Phase p;
+		p.duration = duration;
+		p.phaseType = duration % 2 == 0 ? CPU_PHASE : IO_PHASE;
+		phases[i] = p;
+	}
+
 	return createJob(phases);
 }
 

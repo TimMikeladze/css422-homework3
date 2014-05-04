@@ -1,17 +1,19 @@
 #include "job.h"
 
 void printJob(Job *job) {
-	printf("Job: %d, Phase: %d, CPU Duration: %d, IO Duration: %d, Finished %d", job->id, job->phase, job->durations[0], job->durations[1], job->finished);
+	//printf("Job: %d, Phase: %d, CPU Duration: %d, IO Duration: %d, Finished %d", job->id, job->phase, job->durations[0], job->durations[1], job->finished);
 }
 
-Job createJob(int durations[NUMBER_OF_PHASES]) {
+Job createJob(Phase phases[]) {
 	static int id = 0;
 
 	Job j;
+
 	j.id = id;
-	memcpy(j.durations, durations, sizeof(j.durations));
-	j.phase = CPU;
+	memcpy(j.phases, phases, sizeof(j.phases));
+	j.currentPhase = &j.phases[0];
 	j.finished = false;
+
 	j.printJob = &printJob;
 
 	id++;
