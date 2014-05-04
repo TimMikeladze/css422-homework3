@@ -11,8 +11,9 @@
 
 void createQueues();
 void setupThreads();
+void waitForThreads(pthread_t threads[]);
 void cleanupThreads();
-void createThreads(void **function, pthread_t threads[], int amount);
+void createThreads(void *function, pthread_t threads[], int amount);
 Job createRandomJob(int min, int max);
 void *cpuThread(void *args);
 void *ioThread();
@@ -39,13 +40,11 @@ int main(void) {
 	createQueues();
 	setupThreads();
 
-	createThreads(cpuThread, cpuThreads, 4);
+	createThreads(submissionThread, submissionThreads, NUMBER_OF_SUBMISSION_THREADS);
+	createThreads(cpuThread, cpuThreads, NUMBER_OF_CPU_THREADS);
 
-	int i = 0;
-	int length = sizeof(cpuThreads) / sizeof(cpuThreads[0]);
-	for (i = 0; i < length; i++) {
-		pthread_join(cpuThreads[i], NULL);
-	}
+	waitForThreads(submissionThreads);
+	waitForThreads(cpuThreads);
 
 	printf("All threads complete.\n");
 
@@ -57,15 +56,15 @@ int main(void) {
 	return EXIT_SUCCESS;
 }
 
-void createThreads(void **function, pthread_t threads[], int amount) {
+void createThreads(void *function, pthread_t threads[], int amount) {
 	int i = 0;
 	for (i = 0; i < amount; i++) {
-		pthread_create(&threads[i], &attr, function, (void *) 1);
+		pthread_create(&threads[i], &attr, function, (void *) i);
 	}
 }
 
 void *cpuThread(void *args) {
-	printf("cpu thread ran\n");
+	printf("cpu thread ran %d \n", args);
 }
 
 void *ioThread() {
@@ -87,6 +86,15 @@ void setupThreads() {
 	pthread_cond_init(&count_threshold_conditionvar, NULL);
 	pthread_attr_init(&attr);
 	pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_JOINABLE);
+}
+
+
+void waitForThreads(pthread_t threads[]) {
+	int i = 0;
+	int length = sizeof(threads) / sizeof(threads[0]);
+	for (i = 0; i < length; i++) {
+		pthread_join(threads[i], NULL);
+	}
 }
 
 void cleanupThreads() {
