@@ -11,9 +11,6 @@ Queue createQueue() {
 	queue.dequeue = &dequeue;
 	queue.peek = &peek;
 	queue.printQueue = &printQueue;
-	queue.isLocked = &isLocked;
-	queue.lock = &lock;
-	queue.unlock = &unlock;
 
 	return queue;
 }
@@ -44,18 +41,6 @@ Job dequeue(Queue *queue) {
 
 Job peek(Queue *queue) {
 	return queue->head->job;
-}
-
-bool isLocked(Queue *queue) {
-	return queue->locked == true;
-}
-
-void lock(Queue *queue) {
-	queue->locked = true;
-}
-
-void unlock(Queue *queue) {
-	queue->locked = false;
 }
 
 void printQueue(Queue *queue) {
