@@ -9,7 +9,6 @@ Job createJob(Phase phases[]) {
 	memcpy(j.phases, phases, sizeof(j.phases));
 	j.currentPhase = &j.phases[0];
 	j.finished = false;
-
 	j.printJob = &printJob;
 
 	id++;

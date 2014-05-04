@@ -5,16 +5,21 @@
 #include <time.h>
 #include "queue.h"
 
-#define NUMBER_OF_CPU_THREADS 8
+#define NUMBER_OF_CPU_THREADS 4
 #define NUMBER_OF_IO_THREADS 4
 #define NUMBER_OF_SUBMISSION_THREADS 4
+#define MIN_NUMBER_OF_PHASES 2
+#define MAX_NUMBER_OF_PHASES 2
+#define MAX_DURATION 15
+#define MAX_CREATION_RATE 4
+#define MIN_CREATION_RATE 3
 
 void createQueues();
 void setupThreads();
 void waitForThreads(pthread_t threads[]);
 void cleanupThreads();
 void createThreads(void *function, pthread_t threads[], int amount);
-Job createRandomJob(int min, int max);
+Job createRandomJob();
 void *cpuThread(void *args);
 void *ioThread(void *args);
 void *submissionThread(void *args);
@@ -37,12 +42,13 @@ int main(void) {
 	srand(time(NULL));
 
 	createQueues();
+
 	setupThreads();
 
 	createThreads(cpuThread, cpuThreads, NUMBER_OF_CPU_THREADS);
 	createThreads(ioThread, ioThreads, NUMBER_OF_IO_THREADS);
 	createThreads(submissionThread, submissionThreads,
-			NUMBER_OF_SUBMISSION_THREADS);
+	NUMBER_OF_SUBMISSION_THREADS);
 
 	waitForThreads(cpuThreads);
 	waitForThreads(ioThreads);
@@ -52,6 +58,7 @@ int main(void) {
 
 	cleanupThreads();
 
+	createRandomJob();
 	return EXIT_SUCCESS;
 }
 
@@ -63,34 +70,83 @@ void createThreads(void *function, pthread_t threads[], int amount) {
 }
 
 void *cpuThread(void *args) {
-	printf("cpu thread ran %d \n", args);
+	while (true) {
+		if (cpuQueue.getSize(&cpuQueue) > 0) {
+			Job job = cpuQueue.dequeue(&cpuQueue);
 
+			if (job.currentPhase->duration > 0) {
+				printf("CPU Thread %d running job %d for %d seconds\n", args, job.id, job.currentPhase->duration);
+				sleep(job.currentPhase->duration);
+
+				job.currentPhase++;
+
+				if (job.currentPhase->type == CPU_PHASE) {
+					printf("Put job %d on CPU Queue by CPU Thread %d\n", job.id, args);
+					cpuQueue.enqueue(&cpuQueue, job);
+				} else if (job.currentPhase->type == IO_PHASE) {
+					printf("Put job %d on IO Queue by CPU Thread %d\n", job.id, args);
+					ioQueue.enqueue(&ioQueue, job);
+				} else {
+					printf("Put job %d on Finished Queue by CPU Thread %d\n", job.id, args);
+					finishedQueue.enqueue(&finishedQueue, job);
+				}
+			} else {
+				printf("Put job %d on Finished Queue by CPU Thread %d\n", job.id, args);
+				finishedQueue.enqueue(&finishedQueue, job);
+			}
+		}
+	}
 }
 
 void *ioThread(void *args) {
-	printf("io thread ran %d \n", args);
+	while (true) {
+		if (ioQueue.getSize(&ioQueue) > 0) {
+			Job job = ioQueue.dequeue(&ioQueue);
+
+			if (job.currentPhase->duration > 0) {
+				printf("IO Thread %d running job %d for %d seconds\n", args, job.id, job.currentPhase->duration);
+				sleep(job.currentPhase->duration);
+
+				job.currentPhase++;
+
+				if (job.currentPhase->type == CPU_PHASE) {
+					printf("Put job %d on CPU Queue by IO Thread %d\n", job.id, args);
+					ioQueue.enqueue(&ioQueue, job);
+				} else if (job.currentPhase->type == IO_PHASE) {
+					printf("Put job %d on IO Queue by IO Thread %d\n", job.id, args);
+					ioQueue.enqueue(&ioQueue, job);
+				} else {
+					printf("Put job %d on Finished Queue by IO Thread %d\n", job.id, args);
+					finishedQueue.enqueue(&finishedQueue, job);
+				}
+			} else {
+				printf("Put job %d on Finished Queue by IO Thread %d\n", job.id, args);
+				finishedQueue.enqueue(&finishedQueue, job);
+			}
+		}
+	}
 }
 
 void *submissionThread(void *args) {
-	int rate = generateRandom(3, 4);
+	int rate = generateRandom(MIN_CREATION_RATE, MAX_CREATION_RATE);
 	printf("Submission thread %d creating jobs every %d seconds\n", args, rate);
 
 	int t = currentTime();
 	while (true) {
 		if (currentTime() > t + rate) {
 			t = currentTime();
-			Job job = createRandomJob(1, 15);
+			Job job = createRandomJob(MAX_DURATION);
 			if (job.currentPhase->type == CPU_PHASE) {
-				printf("Put job %d on CPU Queue\n", job.id);
+				printf("Put job %d on CPU Queue by Submission Thread\n", job.id);
 				cpuQueue.enqueue(&cpuQueue, job);
 			} else if (job.currentPhase->type == IO_PHASE) {
-				printf("Put job %d on IO Queue\n", job.id);
+				printf("Put job %d on IO Queue by Submission Thread\n", job.id);
 				ioQueue.enqueue(&ioQueue, job);
 			}
 		} else {
 			if (finishedQueue.getSize(&finishedQueue) > 0) {
 				Job j = finishedQueue.dequeue(&finishedQueue);
-				printf("Job %d taken of Finished Queue", j.id);
+				printf("Job %d taken off of Finished Queue\n", j.id);
 			}
 		}
 	}
@@ -124,16 +180,27 @@ void cleanupThreads() {
 	pthread_exit(NULL);
 }
 
-Job createRandomJob(int min, int max) {
-	int numberOfPhases = generateRandom(2, MAX_PHASES);
-	Phase phases[numberOfPhases];
+Job createRandomJob() {
+	int numberOfPhases = generateRandom(MIN_NUMBER_OF_PHASES, MAX_NUMBER_OF_PHASES);
 
+	Phase phases[numberOfPhases];
 	int i = 0;
+	PhaseType type;
 	for (i = 0; i < numberOfPhases; i++) {
-		int duration = generateRandom(1, 15);
+		int duration = generateRandom(1, MAX_DURATION);
 		Phase phase;
+
 		phase.duration = duration;
-		phase.type = duration % 2 == 0 ? CPU_PHASE : IO_PHASE;
+
+		if (type == CPU_PHASE) {
+			type = IO_PHASE;
+		} else if (type == IO_PHASE) {
+			type = CPU_PHASE;
+		} else {
+			type = duration % 2 == 0 ? CPU_PHASE : IO_PHASE;
+		}
+		phase.type = type;
+
 		phases[i] = phase;
 	}
 

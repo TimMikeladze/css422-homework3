@@ -19,7 +19,7 @@ Queue createQueue() {
 
 void wait(Queue *queue) {
 	while (queue->locked) {
-		puts("Queue is locked");
+	//	puts("Queue is locked");
 	}
 }
 
@@ -82,6 +82,7 @@ int getSize(Queue *queue) {
 	queue->locked = true;
 	int size = queue->size;
 	queue->locked = false;
+	return size;
 }
 
 void printQueue(Queue *queue) {
