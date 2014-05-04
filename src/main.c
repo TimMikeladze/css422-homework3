@@ -7,9 +7,10 @@
 
 #define NUMBER_OF_CPU_THREADS 8
 #define NUMBER_OF_IO_THREADS 4
-#define NUMBER_OF_SUBMISSION_THREADS 4
+#define NUMBER_OF_SUBMISSION_THREADS 1
 
 void createQueues();
+void waitForQueue(Queue queue);
 void setupThreads();
 void waitForThreads(pthread_t threads[]);
 void cleanupThreads();
@@ -18,7 +19,7 @@ Job createRandomJob(int min, int max);
 void *cpuThread(void *args);
 void *ioThread(void *args);
 void *submissionThread(void *args);
-int getTime();
+int currentTime();
 int generateRandom(int min, int max);
 
 pthread_mutex_t count_mutex;
@@ -50,8 +51,8 @@ int main(void) {
 
 	printf("All threads complete.\n");
 
-	Job j = createRandomJob(1, 15);
-	j.printJob(&j);
+	//Job j = createRandomJob(1, 15);
+	//j.printJob(&j);
 
 	cleanupThreads();
 
@@ -74,13 +75,42 @@ void *ioThread(void *args) {
 }
 
 void *submissionThread(void *args) {
-	printf("submission thread ran %d \n", args);
+	int rate = generateRandom(3, 4);
+	printf("Submission thread %d creating jobs every %d seconds\n", args, rate);
+
+	int t = currentTime();
+	while(true) {
+		if (currentTime() > t + rate) {
+			t = currentTime();
+			Job job = createRandomJob(1, 15);
+			if (job.currentPhase->type == CPU_PHASE) {
+				printf("Put job %d on CPU Queue\n", job.id);
+
+				waitForQueue(cpuQueue);
+				cpuQueue.lock(&cpuQueue);
+				cpuQueue.enqueue(&cpuQueue, job);
+				cpuQueue.unlock(&cpuQueue);
+
+			} else if(job.currentPhase->type == IO_PHASE) {
+				printf("Put job %d on IO Queue\n", job.id);
+				cpuQueue.enqueue(&ioQueue, job);
+			}
+		} else {
+			//printf("Submission thread %d checking Finished Queue");
+		}
+	}
 }
 
 void createQueues() {
 	cpuQueue = createQueue();
 	ioQueue = createQueue();
 	finishedQueue = createQueue();
+}
+
+void waitForQueue(Queue q) {
+	while(q.locked) {
+		puts("Queue is locked");
+	}
 }
 
 void setupThreads() {
@@ -126,7 +156,7 @@ int generateRandom(int min, int max) {
 	return (rand() % (max + 1 - min)) + min;
 }
 
-int getTime() {
+int currentTime() {
 	return (int) time(NULL);
 }
 
