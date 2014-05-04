@@ -9,13 +9,16 @@
 typedef struct Job {
 	int id;
 	Phase phases[MAX_PHASES];
-	Phase *currentPhase;
 	bool finished;
 	int phaseIndex;
 	int numberOfPhases;
 
 	void (*printJob)(struct Job*);
+	void (*nextPhase)(struct Job*);
+	Phase (*currentPhase)(struct Job*);
 } Job;
 
 Job createJob(Phase phases[], int numberOfPhases);
 void printJob(Job *job);
+void nextPhase(Job *job);
+Phase currentPhase(Job *job);

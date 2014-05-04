@@ -7,3 +7,4 @@ typedef struct Phase {
 	int duration;
 } Phase;
 
+
