@@ -56,10 +56,10 @@ int main(void) {
 	waitForThreads(ioThreads);
 	waitForThreads(submissionThreads);
 
+	cleanupThreads();
+
 	sleep(1);
 	printf("All threads complete.\n");
-
-	cleanupThreads();
 
 	return EXIT_SUCCESS;
 }
@@ -137,6 +137,7 @@ void *submissionThread(void *args) {
 			if (finishedQueue.getSize(&finishedQueue) > 0) {
 				Job job = finishedQueue.dequeue(&finishedQueue);
 				printf("Job %d taken off of Finished Queue by Submission Thread %d\n", job.id, args);
+				job.printJob(&job);
 				jobCounter++;
 				printf("Jobs processed: %d\n", jobCounter);
 				if (jobCounter == MAX_JOBS_PER_THREAD * NUMBER_OF_SUBMISSION_THREADS - 1) {

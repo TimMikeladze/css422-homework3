@@ -1,0 +1,2253 @@
+  Phase: 1, Type: CPU, Duration: 4
+Jobs processed: 47
+Job 42 put on Finished Queue by IO Thread 1
+Job 50 taken off of IO Queue by IO Thread 1
+Job 50 executing on IO Thread 1
+Job 42 taken off of Finished Queue by Submission Thread 1
+Job 42, Phases: 4, Phase Index: 4, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 2
+  Phase: 1, Type: IO, Duration: 3
+  Phase: 2, Type: CPU, Duration: 5
+  Phase: 3, Type: IO, Duration: 3
+Jobs processed: 48
+Job 43 put on IO Queue by CPU Thread 2
+Created Job 95
+Job 95, Phases: 4, Phase Index: 0, Remaining: 3, Completed: No
+* Phase: 0, Type: IO, Duration: 5
+  Phase: 1, Type: CPU, Duration: 1
+  Phase: 2, Type: IO, Duration: 5
+  Phase: 3, Type: CPU, Duration: 5
+Job 95 put on IO Queue by Submission Thread 2
+Created Job 96
+Job 96, Phases: 3, Phase Index: 0, Remaining: 2, Completed: No
+* Phase: 0, Type: CPU, Duration: 6
+  Phase: 1, Type: IO, Duration: 7
+  Phase: 2, Type: CPU, Duration: 6
+Job 96 put on CPU Queue by Submission Thread 1
+Job 96 taken off of CPU Queue by CPU Thread 4
+Created Job 97
+Job 97, Phases: 3, Phase Index: 0, Remaining: 2, Completed: No
+* Phase: 0, Type: IO, Duration: 7
+  Phase: 1, Type: CPU, Duration: 5
+  Phase: 2, Type: IO, Duration: 7
+Job 97 put on IO Queue by Submission Thread 3
+Job 96 executing on CPU Thread 4
+Job 61 put on IO Queue by CPU Thread 6
+Job 92 put on IO Queue by CPU Thread 1
+Created Job 98
+Job 98, Phases: 5, Phase Index: 0, Remaining: 4, Completed: No
+* Phase: 0, Type: IO, Duration: 1
+  Phase: 1, Type: CPU, Duration: 1
+  Phase: 2, Type: IO, Duration: 5
+  Phase: 3, Type: CPU, Duration: 2
+  Phase: 4, Type: IO, Duration: 7
+Job 98 put on IO Queue by Submission Thread 0
+Job 65 put on CPU Queue by IO Thread 2
+Job 65 taken off of CPU Queue by CPU Thread 3
+Job 65 executing on CPU Thread 3
+Job 70 taken off of IO Queue by IO Thread 2
+Job 70 executing on IO Thread 2
+Job 67 put on CPU Queue by IO Thread 0
+Job 66 taken off of IO Queue by IO Thread 0
+Job 66 executing on IO Thread 0
+Job 67 taken off of CPU Queue by CPU Thread 0
+Job 67 executing on CPU Thread 0
+Job 41 put on CPU Queue by IO Thread 3
+Job 45 taken off of IO Queue by IO Thread 3
+Job 45 executing on IO Thread 3
+Job 41 taken off of CPU Queue by CPU Thread 1
+Job 41 executing on CPU Thread 1
+Job 66 put on CPU Queue by IO Thread 0
+Job 48 taken off of IO Queue by IO Thread 0
+Job 48 executing on IO Thread 0
+Job 66 taken off of CPU Queue by CPU Thread 7
+Job 66 executing on CPU Thread 7
+Job 60 put on Finished Queue by CPU Thread 5
+Job 60 taken off of Finished Queue by Submission Thread 0
+Job 60, Phases: 3, Phase Index: 3, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 6
+  Phase: 1, Type: IO, Duration: 2
+  Phase: 2, Type: CPU, Duration: 7
+Jobs processed: 49
+Job 66 put on IO Queue by CPU Thread 7
+Created Job 99
+Job 99, Phases: 5, Phase Index: 0, Remaining: 4, Completed: No
+* Phase: 0, Type: CPU, Duration: 6
+  Phase: 1, Type: IO, Duration: 1
+  Phase: 2, Type: CPU, Duration: 4
+  Phase: 3, Type: IO, Duration: 2
+  Phase: 4, Type: CPU, Duration: 4
+Created Job 100
+Job 100, Phases: 5, Phase Index: 0, Remaining: 4, Completed: No
+* Phase: 0, Type: CPU, Duration: 2
+  Phase: 1, Type: IO, Duration: 6
+  Phase: 2, Type: CPU, Duration: 2
+  Phase: 3, Type: IO, Duration: 5
+  Phase: 4, Type: CPU, Duration: 5
+Created Job 101
+Job 101, Phases: 5, Phase Index: 0, Remaining: 4, Completed: No
+* Phase: 0, Type: CPU, Duration: 2
+  Phase: 1, Type: IO, Duration: 5
+  Phase: 2, Type: CPU, Duration: 5
+  Phase: 3, Type: IO, Duration: 7
+  Phase: 4, Type: CPU, Duration: 3
+Job 101 put on CPU Queue by Submission Thread 3
+Job 101 taken off of CPU Queue by CPU Thread 5
+Job 101 executing on CPU Thread 5
+Job 99 put on CPU Queue by Submission Thread 1
+Job 100 taken off of CPU Queue by CPU Thread 7
+Job 100 executing on CPU Thread 7
+Job 99 taken off of CPU Queue by CPU Thread 6
+Job 99 executing on CPU Thread 6
+Job 100 put on CPU Queue by Submission Thread 2
+Job 65 put on Finished Queue by CPU Thread 3
+Job 65 taken off of Finished Queue by Submission Thread 2
+Job 65, Phases: 2, Phase Index: 2, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 7
+  Phase: 1, Type: CPU, Duration: 4
+Jobs processed: 50
+Created Job 102
+Job 102, Phases: 2, Phase Index: 0, Remaining: 1, Completed: No
+* Phase: 0, Type: CPU, Duration: 4
+  Phase: 1, Type: IO, Duration: 2
+Job 102 put on CPU Queue by Submission Thread 0
+Job 102 taken off of CPU Queue by CPU Thread 2
+Job 102 executing on CPU Thread 2
+Job 101 put on IO Queue by CPU Thread 5
+Job 100 put on IO Queue by CPU Thread 7
+Job 96 put on IO Queue by CPU Thread 4
+Job 50 put on Finished Queue by IO Thread 1
+Job 69 taken off of IO Queue by IO Thread 1
+Job 69 executing on IO Thread 1
+Job 50 taken off of Finished Queue by Submission Thread 2
+Job 50, Phases: 3, Phase Index: 3, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 1
+  Phase: 1, Type: CPU, Duration: 3
+  Phase: 2, Type: IO, Duration: 7
+Jobs processed: 51
+Job 67 put on IO Queue by CPU Thread 0
+Job 41 put on Finished Queue by CPU Thread 1
+Job 41 taken off of Finished Queue by Submission Thread 0
+Job 41, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 4
+  Phase: 1, Type: IO, Duration: 5
+  Phase: 2, Type: CPU, Duration: 6
+  Phase: 3, Type: IO, Duration: 6
+  Phase: 4, Type: CPU, Duration: 5
+Jobs processed: 52
+Created Job 103
+Job 103, Phases: 3, Phase Index: 0, Remaining: 2, Completed: No
+* Phase: 0, Type: IO, Duration: 3
+  Phase: 1, Type: CPU, Duration: 4
+  Phase: 2, Type: IO, Duration: 5
+Job 103 put on IO Queue by Submission Thread 2
+Created Job 104
+Job 104, Phases: 3, Phase Index: 0, Remaining: 2, Completed: No
+* Phase: 0, Type: CPU, Duration: 4
+  Phase: 1, Type: IO, Duration: 5
+  Phase: 2, Type: CPU, Duration: 2
+Job 104 put on CPU Queue by Submission Thread 3
+Job 104 taken off of CPU Queue by CPU Thread 5
+Job 104 executing on CPU Thread 5
+Created Job 105
+Job 105, Phases: 4, Phase Index: 0, Remaining: 3, Completed: No
+* Phase: 0, Type: IO, Duration: 3
+  Phase: 1, Type: CPU, Duration: 2
+  Phase: 2, Type: IO, Duration: 6
+  Phase: 3, Type: CPU, Duration: 1
+Job 105 put on IO Queue by Submission Thread 1
+Job 70 put on CPU Queue by IO Thread 2
+Job 49 taken off of IO Queue by IO Thread 2
+Job 49 executing on IO Thread 2
+Job 70 taken off of CPU Queue by CPU Thread 0
+Job 70 executing on CPU Thread 0
+Job 48 put on Finished Queue by IO Thread 0
+Job 68 taken off of IO Queue by IO Thread 0
+Job 68 executing on IO Thread 0
+Job 48 taken off of Finished Queue by Submission Thread 2
+Job 48, Phases: 3, Phase Index: 3, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 5
+  Phase: 1, Type: CPU, Duration: 4
+  Phase: 2, Type: IO, Duration: 6
+Jobs processed: 53
+Job 45 put on CPU Queue by IO Thread 3
+Job 45 taken off of CPU Queue by CPU Thread 3
+Job 45 executing on CPU Thread 3
+Job 72 taken off of IO Queue by IO Thread 3
+Job 72 executing on IO Thread 3
+Job 69 put on CPU Queue by IO Thread 1
+Job 73 taken off of IO Queue by IO Thread 1
+Job 73 executing on IO Thread 1
+Job 69 taken off of CPU Queue by CPU Thread 7
+Job 69 executing on CPU Thread 7
+Job 102 put on IO Queue by CPU Thread 2
+Job 99 put on IO Queue by CPU Thread 6
+Created Job 106
+Job 106, Phases: 3, Phase Index: 0, Remaining: 2, Completed: No
+* Phase: 0, Type: IO, Duration: 1
+  Phase: 1, Type: CPU, Duration: 2
+  Phase: 2, Type: IO, Duration: 7
+Job 106 put on IO Queue by Submission Thread 0
+Job 49 put on Finished Queue by IO Thread 2
+Job 74 taken off of IO Queue by IO Thread 2
+Job 74 executing on IO Thread 2
+Job 49 taken off of Finished Queue by Submission Thread 2
+Job 49, Phases: 3, Phase Index: 3, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 1
+  Phase: 1, Type: CPU, Duration: 7
+  Phase: 2, Type: IO, Duration: 3
+Jobs processed: 54
+Created Job 107
+Job 107, Phases: 5, Phase Index: 0, Remaining: 4, Completed: No
+* Phase: 0, Type: IO, Duration: 7
+  Phase: 1, Type: CPU, Duration: 1
+  Phase: 2, Type: IO, Duration: 4
+  Phase: 3, Type: CPU, Duration: 2
+  Phase: 4, Type: IO, Duration: 1
+Job 107 put on IO Queue by Submission Thread 3
+Created Job 108
+Job 108, Phases: 3, Phase Index: 0, Remaining: 2, Completed: No
+* Phase: 0, Type: CPU, Duration: 4
+  Phase: 1, Type: IO, Duration: 3
+  Phase: 2, Type: CPU, Duration: 7
+Job 108 put on CPU Queue by Submission Thread 2
+Created Job 109
+Job 109, Phases: 2, Phase Index: 0, Remaining: 1, Completed: No
+* Phase: 0, Type: CPU, Duration: 4
+  Phase: 1, Type: IO, Duration: 4
+Job 109 put on CPU Queue by Submission Thread 1
+Job 109 taken off of CPU Queue by CPU Thread 6
+Job 109 executing on CPU Thread 6
+Job 108 taken off of CPU Queue by CPU Thread 1
+Job 108 executing on CPU Thread 1
+Job 104 put on IO Queue by CPU Thread 5
+Job 68 put on CPU Queue by IO Thread 0
+Job 75 taken off of IO Queue by IO Thread 0
+Job 75 executing on IO Thread 0
+Job 68 taken off of CPU Queue by CPU Thread 5
+Job 68 executing on CPU Thread 5
+Job 45 put on Finished Queue by CPU Thread 3
+Job 45 taken off of Finished Queue by Submission Thread 2
+Job 45, Phases: 4, Phase Index: 4, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 3
+  Phase: 1, Type: CPU, Duration: 7
+  Phase: 2, Type: IO, Duration: 7
+  Phase: 3, Type: CPU, Duration: 5
+Jobs processed: 55
+Job 73 put on CPU Queue by IO Thread 1
+Job 69 put on IO Queue by CPU Thread 7
+Job 74 put on CPU Queue by IO Thread 2
+Job 71 taken off of IO Queue by IO Thread 1
+Job 71 executing on IO Thread 1
+Job 73 taken off of CPU Queue by CPU Thread 2
+Job 73 executing on CPU Thread 2
+Job 74 taken off of CPU Queue by CPU Thread 7
+Job 74 executing on CPU Thread 7
+Job 36 taken off of IO Queue by IO Thread 2
+Job 36 executing on IO Thread 2
+Job 70 put on IO Queue by CPU Thread 0
+Job 75 put on CPU Queue by IO Thread 0
+Job 76 taken off of IO Queue by IO Thread 0
+Job 76 executing on IO Thread 0
+Job 75 taken off of CPU Queue by CPU Thread 3
+Job 75 executing on CPU Thread 3
+Job 73 put on IO Queue by CPU Thread 2
+Job 72 put on CPU Queue by IO Thread 3
+Job 51 taken off of IO Queue by IO Thread 3
+Job 51 executing on IO Thread 3
+Job 72 taken off of CPU Queue by CPU Thread 0
+Job 72 executing on CPU Thread 0
+Created Job 110
+Job 110, Phases: 4, Phase Index: 0, Remaining: 3, Completed: No
+* Phase: 0, Type: CPU, Duration: 6
+  Phase: 1, Type: IO, Duration: 4
+  Phase: 2, Type: CPU, Duration: 2
+  Phase: 3, Type: IO, Duration: 3
+Job 110 put on CPU Queue by Submission Thread 3
+Job 110 taken off of CPU Queue by CPU Thread 2
+Job 110 executing on CPU Thread 2
+Created Job 111
+Job 111, Phases: 4, Phase Index: 0, Remaining: 3, Completed: No
+* Phase: 0, Type: IO, Duration: 3
+  Phase: 1, Type: CPU, Duration: 6
+  Phase: 2, Type: IO, Duration: 3
+  Phase: 3, Type: CPU, Duration: 5
+Job 111 put on IO Queue by Submission Thread 0
+Created Job 112
+Job 112, Phases: 2, Phase Index: 0, Remaining: 1, Completed: No
+* Phase: 0, Type: IO, Duration: 5
+  Phase: 1, Type: CPU, Duration: 3
+Job 112 put on IO Queue by Submission Thread 1
+Created Job 113
+Job 113, Phases: 5, Phase Index: 0, Remaining: 4, Completed: No
+* Phase: 0, Type: IO, Duration: 7
+  Phase: 1, Type: CPU, Duration: 3
+  Phase: 2, Type: IO, Duration: 5
+  Phase: 3, Type: CPU, Duration: 7
+  Phase: 4, Type: IO, Duration: 2
+Job 113 put on IO Queue by Submission Thread 2
+Job 109 put on IO Queue by CPU Thread 6
+Job 108 put on IO Queue by CPU Thread 1
+Job 68 put on IO Queue by CPU Thread 5
+Job 71 put on CPU Queue by IO Thread 1
+Job 54 taken off of IO Queue by IO Thread 1
+Job 54 executing on IO Thread 1
+Job 71 taken off of CPU Queue by CPU Thread 5
+Job 71 executing on CPU Thread 5
+Job 74 put on IO Queue by CPU Thread 7
+Job 36 put on Finished Queue by IO Thread 2
+Job 47 taken off of IO Queue by IO Thread 2
+Job 47 executing on IO Thread 2
+Job 36 taken off of Finished Queue by Submission Thread 0
+Job 36, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 3
+  Phase: 1, Type: CPU, Duration: 1
+  Phase: 2, Type: IO, Duration: 7
+  Phase: 3, Type: CPU, Duration: 7
+  Phase: 4, Type: IO, Duration: 3
+Jobs processed: 56
+Job 75 put on Finished Queue by CPU Thread 3
+Job 75 taken off of Finished Queue by Submission Thread 3
+Job 75, Phases: 2, Phase Index: 2, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 3
+  Phase: 1, Type: CPU, Duration: 3
+Jobs processed: 57
+Job 71 put on IO Queue by CPU Thread 5
+Job 72 put on IO Queue by CPU Thread 0
+Created Job 114
+Job 114, Phases: 3, Phase Index: 0, Remaining: 2, Completed: No
+* Phase: 0, Type: IO, Duration: 5
+  Phase: 1, Type: CPU, Duration: 3
+  Phase: 2, Type: IO, Duration: 6
+Job 114 put on IO Queue by Submission Thread 2
+Created Job 115
+Job 115, Phases: 4, Phase Index: 0, Remaining: 3, Completed: No
+* Phase: 0, Type: CPU, Duration: 6
+  Phase: 1, Type: IO, Duration: 2
+  Phase: 2, Type: CPU, Duration: 6
+  Phase: 3, Type: IO, Duration: 3
+Job 115 put on CPU Queue by Submission Thread 3
+Job 115 taken off of CPU Queue by CPU Thread 6
+Job 115 executing on CPU Thread 6
+Created Job 116
+Job 116, Phases: 5, Phase Index: 0, Remaining: 4, Completed: No
+* Phase: 0, Type: IO, Duration: 7
+  Phase: 1, Type: CPU, Duration: 6
+  Phase: 2, Type: IO, Duration: 4
+  Phase: 3, Type: CPU, Duration: 6
+  Phase: 4, Type: IO, Duration: 1
+Job 116 put on IO Queue by Submission Thread 1
+Job 54 put on CPU Queue by IO Thread 1
+Job 54 taken off of CPU Queue by CPU Thread 7
+Job 54 executing on CPU Thread 7
+Job 79 taken off of IO Queue by IO Thread 1
+Job 79 executing on IO Thread 1
+Job 47 put on CPU Queue by IO Thread 2
+Job 56 taken off of IO Queue by IO Thread 2
+Job 56 executing on IO Thread 2
+Job 47 taken off of CPU Queue by CPU Thread 3
+Job 47 executing on CPU Thread 3
+Created Job 117
+Job 117, Phases: 3, Phase Index: 0, Remaining: 2, Completed: No
+* Phase: 0, Type: CPU, Duration: 6
+  Phase: 1, Type: IO, Duration: 2
+  Phase: 2, Type: CPU, Duration: 7
+Job 117 put on CPU Queue by Submission Thread 0
+Job 117 taken off of CPU Queue by CPU Thread 5
+Job 117 executing on CPU Thread 5
+Job 79 put on CPU Queue by IO Thread 1
+Job 80 taken off of IO Queue by IO Thread 1
+Job 80 executing on IO Thread 1
+Job 79 taken off of CPU Queue by CPU Thread 0
+Job 79 executing on CPU Thread 0
+Job 51 put on CPU Queue by IO Thread 3
+Job 77 taken off of IO Queue by IO Thread 3
+Job 77 executing on IO Thread 3
+Job 51 taken off of CPU Queue by CPU Thread 1
+Job 51 executing on CPU Thread 1
+Job 110 put on IO Queue by CPU Thread 2
+Job 76 put on CPU Queue by IO Thread 0
+Job 78 taken off of IO Queue by IO Thread 0
+Job 78 executing on IO Thread 0
+Job 76 taken off of CPU Queue by CPU Thread 2
+Job 76 executing on CPU Thread 2
+Job 80 put on CPU Queue by IO Thread 1
+Job 83 taken off of IO Queue by IO Thread 1
+Job 83 executing on IO Thread 1
+Job 80 taken off of CPU Queue by CPU Thread 4
+Job 80 executing on CPU Thread 4
+Job 51 put on Finished Queue by CPU Thread 1
+Job 51 taken off of Finished Queue by Submission Thread 3
+Job 51, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 2
+  Phase: 1, Type: IO, Duration: 3
+  Phase: 2, Type: CPU, Duration: 6
+  Phase: 3, Type: IO, Duration: 6
+  Phase: 4, Type: CPU, Duration: 1
+Jobs processed: 58
+Job 76 put on Finished Queue by CPU Thread 2
+Job 76 taken off of Finished Queue by Submission Thread 0
+Job 76, Phases: 2, Phase Index: 2, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 7
+  Phase: 1, Type: CPU, Duration: 1
+Jobs processed: 59
+Job 47 put on Finished Queue by CPU Thread 3
+Job 47 taken off of Finished Queue by Submission Thread 1
+Job 47, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 6
+  Phase: 1, Type: IO, Duration: 5
+  Phase: 2, Type: CPU, Duration: 2
+  Phase: 3, Type: IO, Duration: 3
+  Phase: 4, Type: CPU, Duration: 3
+Jobs processed: 60
+Created Job 118
+Job 118, Phases: 5, Phase Index: 0, Remaining: 4, Completed: No
+* Phase: 0, Type: CPU, Duration: 2
+  Phase: 1, Type: IO, Duration: 2
+  Phase: 2, Type: CPU, Duration: 5
+  Phase: 3, Type: IO, Duration: 4
+  Phase: 4, Type: CPU, Duration: 5
+Job 118 put on CPU Queue by Submission Thread 2
+Job 118 taken off of CPU Queue by CPU Thread 3
+Job 118 executing on CPU Thread 3
+Created Job 119
+Job 119, Phases: 4, Phase Index: 0, Remaining: 3, Completed: No
+* Phase: 0, Type: CPU, Duration: 2
+  Phase: 1, Type: IO, Duration: 5
+  Phase: 2, Type: CPU, Duration: 5
+  Phase: 3, Type: IO, Duration: 6
+Job 119 put on CPU Queue by Submission Thread 3
+Job 119 taken off of CPU Queue by CPU Thread 2
+Job 119 executing on CPU Thread 2
+Created Job 120
+Job 120, Phases: 5, Phase Index: 0, Remaining: 4, Completed: No
+* Phase: 0, Type: CPU, Duration: 2
+  Phase: 1, Type: IO, Duration: 3
+  Phase: 2, Type: CPU, Duration: 7
+  Phase: 3, Type: IO, Duration: 5
+  Phase: 4, Type: CPU, Duration: 6
+Job 120 put on CPU Queue by Submission Thread 1
+Job 120 taken off of CPU Queue by CPU Thread 1
+Job 120 executing on CPU Thread 1
+Job 54 put on IO Queue by CPU Thread 7
+Job 80 put on IO Queue by CPU Thread 4
+Job 83 put on CPU Queue by IO Thread 1
+Job 81 taken off of IO Queue by IO Thread 1
+Job 81 executing on IO Thread 1
+Job 83 taken off of CPU Queue by CPU Thread 7
+Job 83 executing on CPU Thread 7
+Job 118 put on IO Queue by CPU Thread 3
+Job 119 put on IO Queue by CPU Thread 2
+Job 115 put on IO Queue by CPU Thread 6
+Job 120 put on IO Queue by CPU Thread 1
+Created Job 121
+Job 121, Phases: 3, Phase Index: 0, Remaining: 2, Completed: No
+* Phase: 0, Type: CPU, Duration: 4
+  Phase: 1, Type: IO, Duration: 3
+  Phase: 2, Type: CPU, Duration: 6
+Job 121 put on CPU Queue by Submission Thread 0
+Job 121 taken off of CPU Queue by CPU Thread 2
+Job 121 executing on CPU Thread 2
+Job 79 put on IO Queue by CPU Thread 0
+Job 117 put on IO Queue by CPU Thread 5
+Job 56 put on Finished Queue by IO Thread 2
+Job 57 taken off of IO Queue by IO Thread 2
+Job 57 executing on IO Thread 2
+Job 56 taken off of Finished Queue by Submission Thread 2
+Job 56, Phases: 3, Phase Index: 3, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 3
+  Phase: 1, Type: CPU, Duration: 3
+  Phase: 2, Type: IO, Duration: 7
+Jobs processed: 61
+Created Job 122
+Job 122, Phases: 5, Phase Index: 0, Remaining: 4, Completed: No
+* Phase: 0, Type: CPU, Duration: 2
+  Phase: 1, Type: IO, Duration: 2
+  Phase: 2, Type: CPU, Duration: 4
+  Phase: 3, Type: IO, Duration: 5
+  Phase: 4, Type: CPU, Duration: 2
+Job 122 put on CPU Queue by Submission Thread 3
+Job 122 taken off of CPU Queue by CPU Thread 0
+Job 122 executing on CPU Thread 0
+Created Job 123
+Job 123, Phases: 4, Phase Index: 0, Remaining: 3, Completed: No
+* Phase: 0, Type: CPU, Duration: 4
+  Phase: 1, Type: IO, Duration: 3
+  Phase: 2, Type: CPU, Duration: 6
+  Phase: 3, Type: IO, Duration: 3
+Job 123 put on CPU Queue by Submission Thread 1
+Job 123 taken off of CPU Queue by CPU Thread 6
+Job 123 executing on CPU Thread 6
+Created Job 124
+Job 124, Phases: 2, Phase Index: 0, Remaining: 1, Completed: No
+* Phase: 0, Type: IO, Duration: 1
+  Phase: 1, Type: CPU, Duration: 1
+Job 124 put on IO Queue by Submission Thread 2
+Job 78 put on CPU Queue by IO Thread 0
+Job 84 taken off of IO Queue by IO Thread 0
+Job 84 executing on IO Thread 0
+Job 78 taken off of CPU Queue by CPU Thread 1
+Job 78 executing on CPU Thread 1
+Job 77 put on CPU Queue by IO Thread 3
+Job 85 taken off of IO Queue by IO Thread 3
+Job 85 executing on IO Thread 3
+Job 77 taken off of CPU Queue by CPU Thread 5
+Job 77 executing on CPU Thread 5
+Job 122 put on IO Queue by CPU Thread 0
+Job 121 put on IO Queue by CPU Thread 2
+Job 78 put on IO Queue by CPU Thread 1
+Job 83 put on Finished Queue by CPU Thread 7
+Job 81 put on CPU Queue by IO Thread 1
+Job 82 taken off of IO Queue by IO Thread 1
+Job 82 executing on IO Thread 1
+Job 81 taken off of CPU Queue by CPU Thread 7
+Job 81 executing on CPU Thread 7
+Job 83 taken off of Finished Queue by Submission Thread 3
+Job 83, Phases: 2, Phase Index: 2, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 3
+  Phase: 1, Type: CPU, Duration: 5
+Jobs processed: 62
+Created Job 125
+Job 125, Phases: 3, Phase Index: 0, Remaining: 2, Completed: No
+* Phase: 0, Type: IO, Duration: 3
+  Phase: 1, Type: CPU, Duration: 1
+  Phase: 2, Type: IO, Duration: 5
+Job 125 put on IO Queue by Submission Thread 0
+Job 77 put on Finished Queue by CPU Thread 5
+Job 77 taken off of Finished Queue by Submission Thread 0
+Job 77, Phases: 3, Phase Index: 3, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 4
+  Phase: 1, Type: IO, Duration: 7
+  Phase: 2, Type: CPU, Duration: 3
+Jobs processed: 63
+Created Job 126
+Job 126, Phases: 5, Phase Index: 0, Remaining: 4, Completed: No
+* Phase: 0, Type: CPU, Duration: 6
+  Phase: 1, Type: IO, Duration: 3
+  Phase: 2, Type: CPU, Duration: 2
+  Phase: 3, Type: IO, Duration: 5
+  Phase: 4, Type: CPU, Duration: 4
+Job 126 put on CPU Queue by Submission Thread 2
+Job 126 taken off of CPU Queue by CPU Thread 5
+Job 126 executing on CPU Thread 5
+Created Job 127
+Job 127, Phases: 2, Phase Index: 0, Remaining: 1, Completed: No
+* Phase: 0, Type: CPU, Duration: 2
+  Phase: 1, Type: IO, Duration: 7
+Job 127 put on CPU Queue by Submission Thread 1
+Job 127 taken off of CPU Queue by CPU Thread 1
+Job 127 executing on CPU Thread 1
+Created Job 128
+Job 128, Phases: 3, Phase Index: 0, Remaining: 2, Completed: No
+* Phase: 0, Type: IO, Duration: 3
+  Phase: 1, Type: CPU, Duration: 2
+  Phase: 2, Type: IO, Duration: 5
+Job 128 put on IO Queue by Submission Thread 3
+Job 123 put on IO Queue by CPU Thread 6
+Job 84 put on CPU Queue by IO Thread 0
+Job 86 taken off of IO Queue by IO Thread 0
+Job 86 executing on IO Thread 0
+Job 84 taken off of CPU Queue by CPU Thread 6
+Job 84 executing on CPU Thread 6
+Job 127 put on IO Queue by CPU Thread 1
+Job 84 put on IO Queue by CPU Thread 6
+Job 81 put on IO Queue by CPU Thread 7
+Job 82 put on CPU Queue by IO Thread 1
+Job 82 taken off of CPU Queue by CPU Thread 7
+Job 82 executing on CPU Thread 7
+Job 87 taken off of IO Queue by IO Thread 1
+Job 87 executing on IO Thread 1
+Job 57 put on Finished Queue by IO Thread 2
+Job 90 taken off of IO Queue by IO Thread 2
+Job 90 executing on IO Thread 2
+Job 57 taken off of Finished Queue by Submission Thread 1
+Job 57, Phases: 3, Phase Index: 3, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 5
+  Phase: 1, Type: CPU, Duration: 3
+  Phase: 2, Type: IO, Duration: 7
+Jobs processed: 64
+Job 85 put on CPU Queue by IO Thread 3
+Job 89 taken off of IO Queue by IO Thread 3
+Job 89 executing on IO Thread 3
+Job 85 taken off of CPU Queue by CPU Thread 0
+Job 85 executing on CPU Thread 0
+Created Job 129
+Job 129, Phases: 5, Phase Index: 0, Remaining: 4, Completed: No
+* Phase: 0, Type: CPU, Duration: 2
+  Phase: 1, Type: IO, Duration: 7
+  Phase: 2, Type: CPU, Duration: 7
+  Phase: 3, Type: IO, Duration: 6
+  Phase: 4, Type: CPU, Duration: 1
+Job 129 put on CPU Queue by Submission Thread 3
+Job 129 taken off of CPU Queue by CPU Thread 3
+Job 129 executing on CPU Thread 3
+Created Job 130
+Job 130, Phases: 4, Phase Index: 0, Remaining: 3, Completed: No
+* Phase: 0, Type: IO, Duration: 7
+  Phase: 1, Type: CPU, Duration: 2
+  Phase: 2, Type: IO, Duration: 4
+  Phase: 3, Type: CPU, Duration: 3
+Job 130 put on IO Queue by Submission Thread 1
+Created Job 131
+Job 131, Phases: 2, Phase Index: 0, Remaining: 1, Completed: No
+* Phase: 0, Type: CPU, Duration: 2
+  Phase: 1, Type: IO, Duration: 1
+Created Job 132
+Job 132, Phases: 3, Phase Index: 0, Remaining: 2, Completed: No
+* Phase: 0, Type: CPU, Duration: 2
+  Phase: 1, Type: IO, Duration: 1
+  Phase: 2, Type: CPU, Duration: 3
+Job 132 put on CPU Queue by Submission Thread 0
+Job 132 taken off of CPU Queue by CPU Thread 2
+Job 132 executing on CPU Thread 2
+Job 131 put on CPU Queue by Submission Thread 2
+Job 131 taken off of CPU Queue by CPU Thread 4
+Job 131 executing on CPU Thread 4
+Job 89 put on CPU Queue by IO Thread 3
+Job 63 taken off of IO Queue by IO Thread 3
+Job 63 executing on IO Thread 3
+Job 89 taken off of CPU Queue by CPU Thread 6
+Job 89 executing on CPU Thread 6
+Job 85 put on IO Queue by CPU Thread 0
+Job 86 put on Finished Queue by IO Thread 0
+Job 91 taken off of IO Queue by IO Thread 0
+Job 91 executing on IO Thread 0
+Job 86 taken off of Finished Queue by Submission Thread 1
+Job 86, Phases: 2, Phase Index: 2, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 2
+  Phase: 1, Type: IO, Duration: 4
+Jobs processed: 65
+Job 87 put on CPU Queue by IO Thread 1
+Job 94 taken off of IO Queue by IO Thread 1
+Job 94 executing on IO Thread 1
+Job 87 taken off of CPU Queue by CPU Thread 0
+Job 87 executing on CPU Thread 0
+Job 63 put on Finished Queue by IO Thread 3
+Job 64 taken off of IO Queue by IO Thread 3
+Job 64 executing on IO Thread 3
+Job 63 taken off of Finished Queue by Submission Thread 3
+Job 63, Phases: 3, Phase Index: 3, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 1
+  Phase: 1, Type: CPU, Duration: 4
+  Phase: 2, Type: IO, Duration: 1
+Jobs processed: 66
+Job 126 put on IO Queue by CPU Thread 5
+Job 129 put on IO Queue by CPU Thread 3
+Job 132 put on IO Queue by CPU Thread 2
+Job 131 put on IO Queue by CPU Thread 4
+Job 91 put on CPU Queue by IO Thread 0
+Job 58 taken off of IO Queue by IO Thread 0
+Job 58 executing on IO Thread 0
+Job 91 taken off of CPU Queue by CPU Thread 1
+Job 91 executing on CPU Thread 1
+Job 89 put on IO Queue by CPU Thread 6
+Created Job 133
+Job 133, Phases: 3, Phase Index: 0, Remaining: 2, Completed: No
+* Phase: 0, Type: CPU, Duration: 6
+  Phase: 1, Type: IO, Duration: 6
+  Phase: 2, Type: CPU, Duration: 2
+Created Job 135
+Job 135, Phases: 4, Phase Index: 0, Remaining: 3, Completed: No
+* Phase: 0, Type: IO, Duration: 7
+  Phase: 1, Type: CPU, Duration: 2
+  Phase: 2, Type: IO, Duration: 5
+  Phase: 3, Type: CPU, Duration: 1
+Job 135 put on IO Queue by Submission Thread 2
+Created Job 133
+Job 133, Phases: 5, Phase Index: 0, Remaining: 4, Completed: No
+* Phase: 0, Type: IO, Duration: 3
+  Phase: 1, Type: CPU, Duration: 1
+  Phase: 2, Type: IO, Duration: 5
+  Phase: 3, Type: CPU, Duration: 1
+  Phase: 4, Type: IO, Duration: 7
+Job 133 put on IO Queue by Submission Thread 1
+Job 133 put on CPU Queue by Submission Thread 3
+Job 133 taken off of CPU Queue by CPU Thread 5
+Job 133 executing on CPU Thread 5
+Job 82 put on IO Queue by CPU Thread 7
+Job 87 put on IO Queue by CPU Thread 0
+Created Job 136
+Job 136, Phases: 2, Phase Index: 0, Remaining: 1, Completed: No
+* Phase: 0, Type: CPU, Duration: 4
+  Phase: 1, Type: IO, Duration: 5
+Job 136 put on CPU Queue by Submission Thread 0
+Job 136 taken off of CPU Queue by CPU Thread 7
+Job 136 executing on CPU Thread 7
+Job 90 put on CPU Queue by IO Thread 2
+Job 93 taken off of IO Queue by IO Thread 2
+Job 93 executing on IO Thread 2
+Job 90 taken off of CPU Queue by CPU Thread 3
+Job 90 executing on CPU Thread 3
+Job 64 put on Finished Queue by IO Thread 3
+Job 88 taken off of IO Queue by IO Thread 3
+Job 88 executing on IO Thread 3
+Job 64 taken off of Finished Queue by Submission Thread 2
+Job 64, Phases: 3, Phase Index: 3, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 3
+  Phase: 1, Type: CPU, Duration: 2
+  Phase: 2, Type: IO, Duration: 6
+Jobs processed: 67
+Created Job 137
+Job 137, Phases: 2, Phase Index: 0, Remaining: 1, Completed: No
+* Phase: 0, Type: CPU, Duration: 2
+  Phase: 1, Type: IO, Duration: 4
+Job 137 put on CPU Queue by Submission Thread 1
+Job 137 taken off of CPU Queue by CPU Thread 6
+Job 137 executing on CPU Thread 6
+Created Job 138
+Job 138, Phases: 2, Phase Index: 0, Remaining: 1, Completed: No
+* Phase: 0, Type: CPU, Duration: 6
+  Phase: 1, Type: IO, Duration: 4
+Job 138 put on CPU Queue by Submission Thread 2
+Job 138 taken off of CPU Queue by CPU Thread 4
+Job 138 executing on CPU Thread 4
+Created Job 139
+Job 139, Phases: 2, Phase Index: 0, Remaining: 1, Completed: No
+* Phase: 0, Type: IO, Duration: 5
+  Phase: 1, Type: CPU, Duration: 4
+Job 139 put on IO Queue by Submission Thread 3
+Job 91 put on IO Queue by CPU Thread 1
+Job 94 put on CPU Queue by IO Thread 1
+Job 94 taken off of CPU Queue by CPU Thread 1
+Job 43 taken off of IO Queue by IO Thread 1
+Job 43 executing on IO Thread 1
+Job 94 executing on CPU Thread 1
+Job 136 put on IO Queue by CPU Thread 7
+Job 58 put on CPU Queue by IO Thread 0
+Job 95 taken off of IO Queue by IO Thread 0
+Job 95 executing on IO Thread 0
+Job 58 taken off of CPU Queue by CPU Thread 7
+Job 58 executing on CPU Thread 7
+Created Job 140
+Job 140, Phases: 3, Phase Index: 0, Remaining: 2, Completed: No
+* Phase: 0, Type: IO, Duration: 7
+  Phase: 1, Type: CPU, Duration: 3
+  Phase: 2, Type: IO, Duration: 6
+Job 140 put on IO Queue by Submission Thread 0
+Job 137 put on IO Queue by CPU Thread 6
+Job 133 put on IO Queue by CPU Thread 5
+Job 43 put on Finished Queue by IO Thread 1
+Job 97 taken off of IO Queue by IO Thread 1
+Job 97 executing on IO Thread 1
+Job 43 taken off of Finished Queue by Submission Thread 2
+Job 43, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 5
+  Phase: 1, Type: CPU, Duration: 2
+  Phase: 2, Type: IO, Duration: 3
+  Phase: 3, Type: CPU, Duration: 6
+  Phase: 4, Type: IO, Duration: 2
+Jobs processed: 68
+Job 58 put on IO Queue by CPU Thread 7
+Job 93 put on CPU Queue by IO Thread 2
+Job 61 taken off of IO Queue by IO Thread 2
+Job 61 executing on IO Thread 2
+Job 93 taken off of CPU Queue by CPU Thread 0
+Job 93 executing on CPU Thread 0
+Job 90 put on Finished Queue by CPU Thread 3
+Job 90 taken off of Finished Queue by Submission Thread 1
+Job 90, Phases: 2, Phase Index: 2, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 7
+  Phase: 1, Type: CPU, Duration: 6
+Jobs processed: 69
+Job 88 put on CPU Queue by IO Thread 3
+Job 92 taken off of IO Queue by IO Thread 3
+Job 92 executing on IO Thread 3
+Job 88 taken off of CPU Queue by CPU Thread 2
+Job 88 executing on CPU Thread 2
+Created Job 141
+Job 141, Phases: 5, Phase Index: 0, Remaining: 4, Completed: No
+* Phase: 0, Type: IO, Duration: 1
+  Phase: 1, Type: CPU, Duration: 2
+  Phase: 2, Type: IO, Duration: 2
+  Phase: 3, Type: CPU, Duration: 2
+  Phase: 4, Type: IO, Duration: 2
+Job 141 put on IO Queue by Submission Thread 1
+Created Job 143
+Job 143, Phases: 2, Phase Index: 0, Remaining: 1, Completed: No
+* Phase: 0, Type: IO, Duration: 5
+  Phase: 1, Type: CPU, Duration: 1
+Job 143 put on IO Queue by Submission Thread 2
+Created Job 142
+Job 142, Phases: 4, Phase Index: 0, Remaining: 3, Completed: No
+* Phase: 0, Type: IO, Duration: 1
+  Phase: 1, Type: CPU, Duration: 7
+  Phase: 2, Type: IO, Duration: 4
+  Phase: 3, Type: CPU, Duration: 5
+Job 142 put on IO Queue by Submission Thread 3
+Job 94 put on IO Queue by CPU Thread 1
+Job 138 put on IO Queue by CPU Thread 4
+Job 95 put on CPU Queue by IO Thread 0
+Job 98 taken off of IO Queue by IO Thread 0
+Job 98 executing on IO Thread 0
+Job 95 taken off of CPU Queue by CPU Thread 5
+Job 95 executing on CPU Thread 5
+Created Job 144
+Job 144, Phases: 3, Phase Index: 0, Remaining: 2, Completed: No
+* Phase: 0, Type: CPU, Duration: 4
+  Phase: 1, Type: IO, Duration: 4
+  Phase: 2, Type: CPU, Duration: 2
+Job 144 put on CPU Queue by Submission Thread 0
+Job 144 taken off of CPU Queue by CPU Thread 6
+Job 144 executing on CPU Thread 6
+Job 98 put on CPU Queue by IO Thread 0
+Job 98 taken off of CPU Queue by CPU Thread 3
+Job 98 executing on CPU Thread 3
+Job 95 put on IO Queue by CPU Thread 5
+Job 66 taken off of IO Queue by IO Thread 0
+Job 66 executing on IO Thread 0
+Job 93 put on Finished Queue by CPU Thread 0
+Job 93 taken off of Finished Queue by Submission Thread 2
+Job 93, Phases: 3, Phase Index: 3, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 2
+  Phase: 1, Type: IO, Duration: 6
+  Phase: 2, Type: CPU, Duration: 4
+Jobs processed: 70
+Created Job 145
+Job 145, Phases: 4, Phase Index: 0, Remaining: 3, Completed: No
+* Phase: 0, Type: CPU, Duration: 4
+  Phase: 1, Type: IO, Duration: 6
+  Phase: 2, Type: CPU, Duration: 4
+  Phase: 3, Type: IO, Duration: 2
+Job 145 put on CPU Queue by Submission Thread 3
+Created Job 146
+Job 146, Phases: 2, Phase Index: 0, Remaining: 1, Completed: No
+* Phase: 0, Type: IO, Duration: 1
+  Phase: 1, Type: CPU, Duration: 4
+Job 146 put on IO Queue by Submission Thread 1
+Job 145 taken off of CPU Queue by CPU Thread 0
+Job 145 executing on CPU Thread 0
+Created Job 147
+Job 147, Phases: 2, Phase Index: 0, Remaining: 1, Completed: No
+* Phase: 0, Type: CPU, Duration: 2
+  Phase: 1, Type: IO, Duration: 3
+Job 147 put on CPU Queue by Submission Thread 2
+Job 147 taken off of CPU Queue by CPU Thread 4
+Job 147 executing on CPU Thread 4
+Job 98 put on IO Queue by CPU Thread 3
+Job 88 put on IO Queue by CPU Thread 2
+Job 97 put on CPU Queue by IO Thread 1
+Job 101 taken off of IO Queue by IO Thread 1
+Job 101 executing on IO Thread 1
+Job 97 taken off of CPU Queue by CPU Thread 3
+Job 97 executing on CPU Thread 3
+Job 147 put on IO Queue by CPU Thread 4
+Job 61 put on CPU Queue by IO Thread 2
+Job 61 taken off of CPU Queue by CPU Thread 4
+Job 61 executing on CPU Thread 4
+Job 100 taken off of IO Queue by IO Thread 2
+Job 100 executing on IO Thread 2
+Job 92 put on CPU Queue by IO Thread 3
+Job 96 taken off of IO Queue by IO Thread 3
+Job 96 executing on IO Thread 3
+Job 92 taken off of CPU Queue by CPU Thread 5
+Job 92 executing on CPU Thread 5
+Job 144 put on IO Queue by CPU Thread 6
+Created Job 148
+Job 148, Phases: 2, Phase Index: 0, Remaining: 1, Completed: No
+* Phase: 0, Type: IO, Duration: 1
+  Phase: 1, Type: CPU, Duration: 4
+Job 148 put on IO Queue by Submission Thread 3
+Created Job 149
+Job 149, Phases: 5, Phase Index: 0, Remaining: 4, Completed: No
+* Phase: 0, Type: IO, Duration: 7
+  Phase: 1, Type: CPU, Duration: 6
+  Phase: 2, Type: IO, Duration: 3
+  Phase: 3, Type: CPU, Duration: 1
+  Phase: 4, Type: IO, Duration: 3
+Job 149 put on IO Queue by Submission Thread 1
+Created Job 150
+Job 150, Phases: 3, Phase Index: 0, Remaining: 2, Completed: No
+* Phase: 0, Type: CPU, Duration: 6
+  Phase: 1, Type: IO, Duration: 6
+  Phase: 2, Type: CPU, Duration: 6
+Job 150 put on CPU Queue by Submission Thread 2
+Created Job 151
+Job 151, Phases: 5, Phase Index: 0, Remaining: 4, Completed: No
+* Phase: 0, Type: IO, Duration: 1
+  Phase: 1, Type: CPU, Duration: 6
+  Phase: 2, Type: IO, Duration: 2
+Job 145 put on IO Queue by CPU Thread 0
+Job 150 taken off of CPU Queue by CPU Thread 6
+Job 150 executing on CPU Thread 6
+  Phase: 3, Type: CPU, Duration: 2
+  Phase: 4, Type: IO, Duration: 1
+Job 151 put on IO Queue by Submission Thread 0
+Job 61 put on Finished Queue by CPU Thread 4
+Job 61 taken off of Finished Queue by Submission Thread 3
+Job 61, Phases: 4, Phase Index: 4, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 7
+  Phase: 1, Type: CPU, Duration: 7
+  Phase: 2, Type: IO, Duration: 7
+  Phase: 3, Type: CPU, Duration: 2
+Jobs processed: 71
+Job 66 put on Finished Queue by IO Thread 0
+Job 67 taken off of IO Queue by IO Thread 0
+Job 67 executing on IO Thread 0
+Job 101 put on CPU Queue by IO Thread 1
+Job 103 taken off of IO Queue by IO Thread 1
+Job 103 executing on IO Thread 1
+Job 101 taken off of CPU Queue by CPU Thread 2
+Job 101 executing on CPU Thread 2
+Job 66 taken off of Finished Queue by Submission Thread 2
+Job 66, Phases: 4, Phase Index: 4, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 4
+  Phase: 1, Type: IO, Duration: 1
+  Phase: 2, Type: CPU, Duration: 1
+  Phase: 3, Type: IO, Duration: 7
+Jobs processed: 72
+Job 97 put on IO Queue by CPU Thread 3
+Job 100 put on CPU Queue by IO Thread 2
+Job 105 taken off of IO Queue by IO Thread 2
+Job 105 executing on IO Thread 2
+Job 100 taken off of CPU Queue by CPU Thread 7
+Job 100 executing on CPU Thread 7
+Job 92 put on IO Queue by CPU Thread 5
+Created Job 152
+Job 152, Phases: 2, Phase Index: 0, Remaining: 1, Completed: No
+* Phase: 0, Type: IO, Duration: 7
+  Phase: 1, Type: CPU, Duration: 4
+Job 152 put on IO Queue by Submission Thread 0
+Job 103 put on CPU Queue by IO Thread 1
+Job 102 taken off of IO Queue by IO Thread 1
+Job 102 executing on IO Thread 1
+Job 103 taken off of CPU Queue by CPU Thread 5
+Job 103 executing on CPU Thread 5
+Job 96 put on CPU Queue by IO Thread 3
+Job 99 taken off of IO Queue by IO Thread 3
+Job 99 executing on IO Thread 3
+Job 96 taken off of CPU Queue by CPU Thread 4
+Job 96 executing on CPU Thread 4
+Job 150 put on IO Queue by CPU Thread 6
+Job 100 put on IO Queue by CPU Thread 7
+Job 99 put on CPU Queue by IO Thread 3
+Job 106 taken off of IO Queue by IO Thread 3
+Job 106 executing on IO Thread 3
+Job 99 taken off of CPU Queue by CPU Thread 0
+Job 99 executing on CPU Thread 0
+Job 67 put on Finished Queue by IO Thread 0
+Job 107 taken off of IO Queue by IO Thread 0
+Job 107 executing on IO Thread 0
+Job 102 put on Finished Queue by IO Thread 1
+Job 104 taken off of IO Queue by IO Thread 1
+Job 104 executing on IO Thread 1
+Job 67 taken off of Finished Queue by Submission Thread 3
+Job 67, Phases: 3, Phase Index: 3, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 7
+  Phase: 1, Type: CPU, Duration: 5
+  Phase: 2, Type: IO, Duration: 5
+Jobs processed: 73
+Job 102 taken off of Finished Queue by Submission Thread 3
+Job 102, Phases: 2, Phase Index: 2, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 4
+  Phase: 1, Type: IO, Duration: 2
+Jobs processed: 74
+Job 101 put on IO Queue by CPU Thread 2
+Job 105 put on CPU Queue by IO Thread 2
+Job 69 taken off of IO Queue by IO Thread 2
+Job 69 executing on IO Thread 2
+Job 105 taken off of CPU Queue by CPU Thread 2
+Job 105 executing on CPU Thread 2
+Job 106 put on CPU Queue by IO Thread 3
+Job 70 taken off of IO Queue by IO Thread 3
+Job 70 executing on IO Thread 3
+Job 106 taken off of CPU Queue by CPU Thread 6
+Job 106 executing on CPU Thread 6
+Job 103 put on IO Queue by CPU Thread 5
+Job 105 put on IO Queue by CPU Thread 2
+Job 106 put on IO Queue by CPU Thread 6
+Created Job 153
+Job 153, Phases: 5, Phase Index: 0, Remaining: 4, Completed: No
+* Phase: 0, Type: IO, Duration: 3
+  Phase: 1, Type: CPU, Duration: 3
+  Phase: 2, Type: IO, Duration: 6
+  Phase: 3, Type: CPU, Duration: 3
+  Phase: 4, Type: IO, Duration: 6
+Job 153 put on IO Queue by Submission Thread 0
+Job 99 put on IO Queue by CPU Thread 0
+Job 96 put on Finished Queue by CPU Thread 4
+Job 96 taken off of Finished Queue by Submission Thread 3
+Job 96, Phases: 3, Phase Index: 3, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 6
+  Phase: 1, Type: IO, Duration: 7
+  Phase: 2, Type: CPU, Duration: 6
+Jobs processed: 75
+Job 104 put on CPU Queue by IO Thread 1
+Job 73 taken off of IO Queue by IO Thread 1
+Job 73 executing on IO Thread 1
+Job 104 taken off of CPU Queue by CPU Thread 6
+Job 104 executing on CPU Thread 6
+Job 69 put on CPU Queue by IO Thread 2
+Job 111 taken off of IO Queue by IO Thread 2
+Job 111 executing on IO Thread 2
+Job 69 taken off of CPU Queue by CPU Thread 4
+Job 69 executing on CPU Thread 4
+Job 107 put on CPU Queue by IO Thread 0
+Job 112 taken off of IO Queue by IO Thread 0
+Job 112 executing on IO Thread 0
+Job 73 put on Finished Queue by IO Thread 1
+Job 113 taken off of IO Queue by IO Thread 1
+Job 113 executing on IO Thread 1
+Job 107 taken off of CPU Queue by CPU Thread 3
+Job 107 executing on CPU Thread 3
+Job 73 taken off of Finished Queue by Submission Thread 3
+Job 73, Phases: 3, Phase Index: 3, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 5
+  Phase: 1, Type: CPU, Duration: 1
+  Phase: 2, Type: IO, Duration: 2
+Jobs processed: 76
+Job 104 put on Finished Queue by CPU Thread 6
+Job 104 taken off of Finished Queue by Submission Thread 3
+Job 104, Phases: 3, Phase Index: 3, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 4
+  Phase: 1, Type: IO, Duration: 5
+  Phase: 2, Type: CPU, Duration: 2
+Jobs processed: 77
+Job 70 put on Finished Queue by IO Thread 3
+Job 109 taken off of IO Queue by IO Thread 3
+Job 109 executing on IO Thread 3
+Job 70 taken off of Finished Queue by Submission Thread 1
+Job 70, Phases: 3, Phase Index: 3, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 7
+  Phase: 1, Type: CPU, Duration: 7
+  Phase: 2, Type: IO, Duration: 7
+Jobs processed: 78
+Created Job 154
+Job 154, Phases: 5, Phase Index: 0, Remaining: 4, Completed: No
+* Phase: 0, Type: IO, Duration: 5
+  Phase: 1, Type: CPU, Duration: 7
+  Phase: 2, Type: IO, Duration: 1
+  Phase: 3, Type: CPU, Duration: 3
+  Phase: 4, Type: IO, Duration: 3
+Job 154 put on IO Queue by Submission Thread 0
+Job 107 put on IO Queue by CPU Thread 3
+Job 111 put on CPU Queue by IO Thread 2
+Job 108 taken off of IO Queue by IO Thread 2
+Job 108 executing on IO Thread 2
+Job 111 taken off of CPU Queue by CPU Thread 2
+Job 111 executing on CPU Thread 2
+Job 69 put on Finished Queue by CPU Thread 4
+Job 108 put on CPU Queue by IO Thread 2
+Job 108 taken off of CPU Queue by CPU Thread 4
+Job 108 executing on CPU Thread 4
+Job 68 taken off of IO Queue by IO Thread 2
+Job 68 executing on IO Thread 2
+Job 69 taken off of Finished Queue by Submission Thread 2
+Job 69, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 2
+  Phase: 1, Type: IO, Duration: 3
+  Phase: 2, Type: CPU, Duration: 5
+  Phase: 3, Type: IO, Duration: 5
+  Phase: 4, Type: CPU, Duration: 6
+Jobs processed: 79
+Job 109 put on Finished Queue by IO Thread 3
+Job 74 taken off of IO Queue by IO Thread 3
+Job 74 executing on IO Thread 3
+Job 109 taken off of Finished Queue by Submission Thread 0
+Job 109, Phases: 2, Phase Index: 2, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 4
+  Phase: 1, Type: IO, Duration: 4
+Jobs processed: 80
+Job 112 put on CPU Queue by IO Thread 0
+Job 71 taken off of IO Queue by IO Thread 0
+Job 71 executing on IO Thread 0
+Job 112 taken off of CPU Queue by CPU Thread 0
+Job 112 executing on CPU Thread 0
+Created Job 155
+Job 155, Phases: 5, Phase Index: 0, Remaining: 4, Completed: No
+* Phase: 0, Type: CPU, Duration: 2
+  Phase: 1, Type: IO, Duration: 6
+  Phase: 2, Type: CPU, Duration: 3
+  Phase: 3, Type: IO, Duration: 7
+  Phase: 4, Type: CPU, Duration: 1
+Job 155 put on CPU Queue by Submission Thread 0
+Job 155 taken off of CPU Queue by CPU Thread 1
+Job 155 executing on CPU Thread 1
+Job 113 put on CPU Queue by IO Thread 1
+Job 72 taken off of IO Queue by IO Thread 1
+Job 72 executing on IO Thread 1
+Job 113 taken off of CPU Queue by CPU Thread 5
+Job 113 executing on CPU Thread 5
+Job 68 put on CPU Queue by IO Thread 2
+Job 114 taken off of IO Queue by IO Thread 2
+Job 114 executing on IO Thread 2
+Job 68 taken off of CPU Queue by CPU Thread 3
+Job 68 executing on CPU Thread 3
+Job 111 put on IO Queue by CPU Thread 2
+Job 155 put on IO Queue by CPU Thread 1
+Job 112 put on Finished Queue by CPU Thread 0
+Job 112 taken off of Finished Queue by Submission Thread 0
+Job 112, Phases: 2, Phase Index: 2, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 5
+  Phase: 1, Type: CPU, Duration: 3
+Jobs processed: 81
+Job 74 put on CPU Queue by IO Thread 3
+Job 116 taken off of IO Queue by IO Thread 3
+Job 116 executing on IO Thread 3
+Job 74 taken off of CPU Queue by CPU Thread 0
+Job 74 executing on CPU Thread 0
+Job 113 put on IO Queue by CPU Thread 5
+Job 71 put on CPU Queue by IO Thread 0
+Job 110 taken off of IO Queue by IO Thread 0
+Job 110 executing on IO Thread 0
+Job 71 taken off of CPU Queue by CPU Thread 5
+Job 71 executing on CPU Thread 5
+Job 68 put on Finished Queue by CPU Thread 3
+Job 68 taken off of Finished Queue by Submission Thread 3
+Job 68, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 4
+  Phase: 1, Type: IO, Duration: 4
+  Phase: 2, Type: CPU, Duration: 4
+  Phase: 3, Type: IO, Duration: 3
+  Phase: 4, Type: CPU, Duration: 3
+Jobs processed: 82
+Created Job 156
+Job 156, Phases: 5, Phase Index: 0, Remaining: 4, Completed: No
+* Phase: 0, Type: IO, Duration: 5
+  Phase: 1, Type: CPU, Duration: 4
+  Phase: 2, Type: IO, Duration: 1
+  Phase: 3, Type: CPU, Duration: 7
+  Phase: 4, Type: IO, Duration: 3
+Job 156 put on IO Queue by Submission Thread 0
+Job 108 put on Finished Queue by CPU Thread 4
+Job 108 taken off of Finished Queue by Submission Thread 0
+Job 108, Phases: 3, Phase Index: 3, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 4
+  Phase: 1, Type: IO, Duration: 3
+  Phase: 2, Type: CPU, Duration: 7
+Jobs processed: 83
+Job 74 put on IO Queue by CPU Thread 0
+Job 114 put on CPU Queue by IO Thread 2
+Job 54 taken off of IO Queue by IO Thread 2
+Job 54 executing on IO Thread 2
+Job 114 taken off of CPU Queue by CPU Thread 1
+Job 114 executing on CPU Thread 1
+Job 72 put on CPU Queue by IO Thread 1
+Job 80 taken off of IO Queue by IO Thread 1
+Job 80 executing on IO Thread 1
+Job 72 taken off of CPU Queue by CPU Thread 2
+Job 72 executing on CPU Thread 2
+Job 54 put on Finished Queue by IO Thread 2
+Job 118 taken off of IO Queue by IO Thread 2
+Job 118 executing on IO Thread 2
+Job 54 taken off of Finished Queue by Submission Thread 1
+Job 54, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 3
+  Phase: 1, Type: CPU, Duration: 1
+  Phase: 2, Type: IO, Duration: 3
+  Phase: 3, Type: CPU, Duration: 4
+  Phase: 4, Type: IO, Duration: 1
+Jobs processed: 84
+Job 110 put on CPU Queue by IO Thread 0
+Job 119 taken off of IO Queue by IO Thread 0
+Job 119 executing on IO Thread 0
+Job 71 put on Finished Queue by CPU Thread 5
+Job 110 taken off of CPU Queue by CPU Thread 5
+Job 110 executing on CPU Thread 5
+Job 71 taken off of Finished Queue by Submission Thread 3
+Job 71, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 6
+  Phase: 1, Type: IO, Duration: 3
+  Phase: 2, Type: CPU, Duration: 1
+  Phase: 3, Type: IO, Duration: 5
+  Phase: 4, Type: CPU, Duration: 4
+Jobs processed: 85
+Job 118 put on CPU Queue by IO Thread 2
+Job 115 taken off of IO Queue by IO Thread 2
+Job 115 executing on IO Thread 2
+Job 118 taken off of CPU Queue by CPU Thread 4
+Job 118 executing on CPU Thread 4
+Job 116 put on CPU Queue by IO Thread 3
+Job 120 taken off of IO Queue by IO Thread 3
+Job 120 executing on IO Thread 3
+Job 116 taken off of CPU Queue by CPU Thread 3
+Job 116 executing on CPU Thread 3
+Job 114 put on IO Queue by CPU Thread 1
+Created Job 157
+Job 157, Phases: 3, Phase Index: 0, Remaining: 2, Completed: No
+* Phase: 0, Type: CPU, Duration: 2
+  Phase: 1, Type: IO, Duration: 2
+  Phase: 2, Type: CPU, Duration: 4
+Job 157 put on CPU Queue by Submission Thread 0
+Job 157 taken off of CPU Queue by CPU Thread 6
+Job 157 executing on CPU Thread 6
+Job 110 put on IO Queue by CPU Thread 5
+Job 115 put on CPU Queue by IO Thread 2
+Job 79 taken off of IO Queue by IO Thread 2
+Job 79 executing on IO Thread 2
+Job 115 taken off of CPU Queue by CPU Thread 0
+Job 115 executing on CPU Thread 0
+Job 157 put on IO Queue by CPU Thread 6
+Job 120 put on CPU Queue by IO Thread 3
+Job 117 taken off of IO Queue by IO Thread 3
+Job 117 executing on IO Thread 3
+Job 120 taken off of CPU Queue by CPU Thread 6
+Job 120 executing on CPU Thread 6
+Job 119 put on CPU Queue by IO Thread 0
+Job 124 taken off of IO Queue by IO Thread 0
+Job 124 executing on IO Thread 0
+Job 119 taken off of CPU Queue by CPU Thread 1
+Job 119 executing on CPU Thread 1
+Job 72 put on Finished Queue by CPU Thread 2
+Job 72 taken off of Finished Queue by Submission Thread 1
+Job 72, Phases: 4, Phase Index: 4, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 7
+  Phase: 1, Type: CPU, Duration: 4
+  Phase: 2, Type: IO, Duration: 6
+  Phase: 3, Type: CPU, Duration: 6
+Jobs processed: 86
+Job 80 put on CPU Queue by IO Thread 1
+Job 122 taken off of IO Queue by IO Thread 1
+Job 122 executing on IO Thread 1
+Job 80 taken off of CPU Queue by CPU Thread 2
+Job 80 executing on CPU Thread 2
+Job 124 put on CPU Queue by IO Thread 0
+Job 121 taken off of IO Queue by IO Thread 0
+Job 121 executing on IO Thread 0
+Job 124 taken off of CPU Queue by CPU Thread 5
+Job 124 executing on CPU Thread 5
+Job 118 put on IO Queue by CPU Thread 4
+Job 117 put on CPU Queue by IO Thread 3
+Job 78 taken off of IO Queue by IO Thread 3
+Job 78 executing on IO Thread 3
+Job 117 taken off of CPU Queue by CPU Thread 7
+Job 117 executing on CPU Thread 7
+Created Job 158
+Job 158, Phases: 4, Phase Index: 0, Remaining: 3, Completed: No
+* Phase: 0, Type: CPU, Duration: 2
+  Phase: 1, Type: IO, Duration: 5
+  Phase: 2, Type: CPU, Duration: 2
+  Phase: 3, Type: IO, Duration: 4
+Job 158 put on CPU Queue by Submission Thread 0
+Job 158 taken off of CPU Queue by CPU Thread 4
+Job 158 executing on CPU Thread 4
+Job 124 put on Finished Queue by CPU Thread 5
+Job 124 taken off of Finished Queue by Submission Thread 2
+Job 124, Phases: 2, Phase Index: 2, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 1
+  Phase: 1, Type: CPU, Duration: 1
+Jobs processed: 87
+Job 116 put on IO Queue by CPU Thread 3
+Job 122 put on CPU Queue by IO Thread 1
+Job 125 taken off of IO Queue by IO Thread 1
+Job 125 executing on IO Thread 1
+Job 122 taken off of CPU Queue by CPU Thread 3
+Job 122 executing on CPU Thread 3
+Job 158 put on IO Queue by CPU Thread 4
+Job 121 put on CPU Queue by IO Thread 0
+Job 128 taken off of IO Queue by IO Thread 0
+Job 128 executing on IO Thread 0
+Job 121 taken off of CPU Queue by CPU Thread 5
+Job 121 executing on CPU Thread 5
+Job 79 put on CPU Queue by IO Thread 2
+Job 123 taken off of IO Queue by IO Thread 2
+Job 123 executing on IO Thread 2
+Job 115 put on IO Queue by CPU Thread 0
+Job 79 taken off of CPU Queue by CPU Thread 0
+Job 79 executing on CPU Thread 0
+Job 119 put on IO Queue by CPU Thread 1
+Job 125 put on CPU Queue by IO Thread 1
+Job 127 taken off of IO Queue by IO Thread 1
+Job 127 executing on IO Thread 1
+Job 125 taken off of CPU Queue by CPU Thread 1
+Job 125 executing on CPU Thread 1
+Job 120 put on IO Queue by CPU Thread 6
+Created Job 159
+Job 159, Phases: 5, Phase Index: 0, Remaining: 4, Completed: No
+* Phase: 0, Type: IO, Duration: 5
+  Phase: 1, Type: CPU, Duration: 5
+  Phase: 2, Type: IO, Duration: 4
+  Phase: 3, Type: CPU, Duration: 3
+  Phase: 4, Type: IO, Duration: 7
+Job 159 put on IO Queue by Submission Thread 0
+Job 122 put on IO Queue by CPU Thread 3
+Job 125 put on IO Queue by CPU Thread 1
+Job 128 put on CPU Queue by IO Thread 0
+Job 84 taken off of IO Queue by IO Thread 0
+Job 84 executing on IO Thread 0
+Job 128 taken off of CPU Queue by CPU Thread 4
+Job 128 executing on CPU Thread 4
+Job 123 put on CPU Queue by IO Thread 2
+Job 81 taken off of IO Queue by IO Thread 2
+Job 81 executing on IO Thread 2
+Job 123 taken off of CPU Queue by CPU Thread 1
+Job 123 executing on CPU Thread 1
+Job 78 put on Finished Queue by IO Thread 3
+Job 130 taken off of IO Queue by IO Thread 3
+Job 130 executing on IO Thread 3
+Job 78 taken off of Finished Queue by Submission Thread 3
+Job 78, Phases: 4, Phase Index: 4, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 4
+  Phase: 1, Type: IO, Duration: 6
+  Phase: 2, Type: CPU, Duration: 2
+  Phase: 3, Type: IO, Duration: 6
+Jobs processed: 88
+Job 80 put on IO Queue by CPU Thread 2
+Job 79 put on Finished Queue by CPU Thread 0
+Job 79 taken off of Finished Queue by Submission Thread 2
+Job 79, Phases: 4, Phase Index: 4, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 1
+  Phase: 1, Type: CPU, Duration: 5
+  Phase: 2, Type: IO, Duration: 6
+  Phase: 3, Type: CPU, Duration: 4
+Jobs processed: 89
+Job 117 put on Finished Queue by CPU Thread 7
+Job 117 taken off of Finished Queue by Submission Thread 1
+Job 117, Phases: 3, Phase Index: 3, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 6
+  Phase: 1, Type: IO, Duration: 2
+  Phase: 2, Type: CPU, Duration: 7
+Jobs processed: 90
+Job 128 put on IO Queue by CPU Thread 4
+Job 81 put on Finished Queue by IO Thread 2
+Job 85 taken off of IO Queue by IO Thread 2
+Job 85 executing on IO Thread 2
+Job 81 taken off of Finished Queue by Submission Thread 2
+Job 81, Phases: 4, Phase Index: 4, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 2
+  Phase: 1, Type: IO, Duration: 5
+  Phase: 2, Type: CPU, Duration: 4
+  Phase: 3, Type: IO, Duration: 2
+Jobs processed: 91
+Job 121 put on Finished Queue by CPU Thread 5
+Job 121 taken off of Finished Queue by Submission Thread 1
+Job 121, Phases: 3, Phase Index: 3, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 4
+  Phase: 1, Type: IO, Duration: 3
+  Phase: 2, Type: CPU, Duration: 6
+Jobs processed: 92
+Job 84 put on Finished Queue by IO Thread 0
+Job 126 taken off of IO Queue by IO Thread 0
+Job 126 executing on IO Thread 0
+Job 84 taken off of Finished Queue by Submission Thread 2
+Job 84, Phases: 3, Phase Index: 3, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 5
+  Phase: 1, Type: CPU, Duration: 1
+  Phase: 2, Type: IO, Duration: 3
+Jobs processed: 93
+Job 85 put on CPU Queue by IO Thread 2
+Job 129 taken off of IO Queue by IO Thread 2
+Job 129 executing on IO Thread 2
+Job 85 taken off of CPU Queue by CPU Thread 7
+Job 85 executing on CPU Thread 7
+Job 127 put on Finished Queue by IO Thread 1
+Job 132 taken off of IO Queue by IO Thread 1
+Job 132 executing on IO Thread 1
+Job 127 taken off of Finished Queue by Submission Thread 2
+Job 127, Phases: 2, Phase Index: 2, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 2
+  Phase: 1, Type: IO, Duration: 7
+Jobs processed: 94
+Job 126 put on CPU Queue by IO Thread 0
+Job 131 taken off of IO Queue by IO Thread 0
+Job 131 executing on IO Thread 0
+Job 126 taken off of CPU Queue by CPU Thread 6
+Job 126 executing on CPU Thread 6
+Job 123 put on IO Queue by CPU Thread 1
+Job 85 put on IO Queue by CPU Thread 7
+Job 132 put on CPU Queue by IO Thread 1
+Job 89 taken off of IO Queue by IO Thread 1
+Job 89 executing on IO Thread 1
+Job 132 taken off of CPU Queue by CPU Thread 7
+Job 132 executing on CPU Thread 7
+Job 131 put on Finished Queue by IO Thread 0
+Job 135 taken off of IO Queue by IO Thread 0
+Job 135 executing on IO Thread 0
+Job 131 taken off of Finished Queue by Submission Thread 0
+Job 131, Phases: 2, Phase Index: 2, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 2
+  Phase: 1, Type: IO, Duration: 1
+Jobs processed: 95
+Job 130 put on CPU Queue by IO Thread 3
+Job 133 taken off of IO Queue by IO Thread 3
+Job 133 executing on IO Thread 3
+Job 130 taken off of CPU Queue by CPU Thread 3
+Job 130 executing on CPU Thread 3
+Job 126 put on IO Queue by CPU Thread 6
+Job 89 put on CPU Queue by IO Thread 1
+Job 82 taken off of IO Queue by IO Thread 1
+Job 82 executing on IO Thread 1
+Job 89 taken off of CPU Queue by CPU Thread 4
+Job 89 executing on CPU Thread 4
+Job 130 put on IO Queue by CPU Thread 3
+Job 132 put on Finished Queue by CPU Thread 7
+Job 132 taken off of Finished Queue by Submission Thread 1
+Job 132, Phases: 3, Phase Index: 3, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 2
+  Phase: 1, Type: IO, Duration: 1
+  Phase: 2, Type: CPU, Duration: 3
+Jobs processed: 96
+Job 133 put on CPU Queue by IO Thread 3
+Job 133 taken off of CPU Queue by CPU Thread 6
+Job 133 executing on CPU Thread 6
+Job 87 taken off of IO Queue by IO Thread 3
+Job 87 executing on IO Thread 3
+Job 133 put on IO Queue by CPU Thread 6
+Job 89 put on IO Queue by CPU Thread 4
+Job 129 put on CPU Queue by IO Thread 2
+Job 139 taken off of IO Queue by IO Thread 2
+Job 139 executing on IO Thread 2
+Job 129 taken off of CPU Queue by CPU Thread 0
+Job 129 executing on CPU Thread 0
+Job 82 put on Finished Queue by IO Thread 1
+Job 91 taken off of IO Queue by IO Thread 1
+Job 91 executing on IO Thread 1
+Job 82 taken off of Finished Queue by Submission Thread 0
+Job 82, Phases: 4, Phase Index: 4, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 6
+  Phase: 1, Type: IO, Duration: 4
+  Phase: 2, Type: CPU, Duration: 6
+  Phase: 3, Type: IO, Duration: 4
+Jobs processed: 97
+Job 87 put on CPU Queue by IO Thread 3
+Job 87 taken off of CPU Queue by CPU Thread 4
+Job 87 executing on CPU Thread 4
+Job 136 taken off of IO Queue by IO Thread 3
+Job 136 executing on IO Thread 3
+Job 135 put on CPU Queue by IO Thread 0
+Job 140 taken off of IO Queue by IO Thread 0
+Job 140 executing on IO Thread 0
+Job 135 taken off of CPU Queue by CPU Thread 3
+Job 135 executing on CPU Thread 3
+Job 87 put on IO Queue by CPU Thread 4
+Job 135 put on IO Queue by CPU Thread 3
+Job 91 put on Finished Queue by IO Thread 1
+Job 137 taken off of IO Queue by IO Thread 1
+Job 137 executing on IO Thread 1
+Job 91 taken off of Finished Queue by Submission Thread 3
+Job 91, Phases: 3, Phase Index: 3, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 1
+  Phase: 1, Type: CPU, Duration: 6
+  Phase: 2, Type: IO, Duration: 4
+Jobs processed: 98
+Job 139 put on CPU Queue by IO Thread 2
+Job 133 taken off of IO Queue by IO Thread 2
+Job 133 executing on IO Thread 2
+Job 139 taken off of CPU Queue by CPU Thread 6
+Job 139 executing on CPU Thread 6
+Job 136 put on Finished Queue by IO Thread 3
+Job 58 taken off of IO Queue by IO Thread 3
+Job 58 executing on IO Thread 3
+Job 136 taken off of Finished Queue by Submission Thread 0
+Job 136, Phases: 2, Phase Index: 2, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 4
+  Phase: 1, Type: IO, Duration: 5
+Jobs processed: 99
+Job 129 put on IO Queue by CPU Thread 0
+Job 137 put on Finished Queue by IO Thread 1
+Job 141 taken off of IO Queue by IO Thread 1
+Job 141 executing on IO Thread 1
+Job 137 taken off of Finished Queue by Submission Thread 0
+Job 137, Phases: 2, Phase Index: 2, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 2
+  Phase: 1, Type: IO, Duration: 4
+Jobs processed: 100
+Job 140 put on CPU Queue by IO Thread 0
+Job 143 taken off of IO Queue by IO Thread 0
+Job 143 executing on IO Thread 0
+Job 140 taken off of CPU Queue by CPU Thread 2
+Job 140 executing on CPU Thread 2
+Job 139 put on Finished Queue by CPU Thread 6
+Job 139 taken off of Finished Queue by Submission Thread 0
+Job 139, Phases: 2, Phase Index: 2, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 5
+  Phase: 1, Type: CPU, Duration: 4
+Jobs processed: 101
+Job 58 put on Finished Queue by IO Thread 3
+Job 142 taken off of IO Queue by IO Thread 3
+Job 142 executing on IO Thread 3
+Job 58 taken off of Finished Queue by Submission Thread 1
+Job 58, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 7
+  Phase: 1, Type: CPU, Duration: 7
+  Phase: 2, Type: IO, Duration: 7
+  Phase: 3, Type: CPU, Duration: 2
+  Phase: 4, Type: IO, Duration: 3
+Jobs processed: 102
+Job 141 put on CPU Queue by IO Thread 1
+Job 94 taken off of IO Queue by IO Thread 1
+Job 94 executing on IO Thread 1
+Job 141 taken off of CPU Queue by CPU Thread 1
+Job 141 executing on CPU Thread 1
+Job 142 put on CPU Queue by IO Thread 3
+Job 138 taken off of IO Queue by IO Thread 3
+Job 138 executing on IO Thread 3
+Job 142 taken off of CPU Queue by CPU Thread 3
+Job 142 executing on CPU Thread 3
+Job 133 put on CPU Queue by IO Thread 2
+Job 95 taken off of IO Queue by IO Thread 2
+Job 95 executing on IO Thread 2
+Job 133 taken off of CPU Queue by CPU Thread 0
+Job 133 executing on CPU Thread 0
+Job 141 put on IO Queue by CPU Thread 1
+Job 140 put on IO Queue by CPU Thread 2
+Job 133 put on Finished Queue by CPU Thread 0
+Job 133 taken off of Finished Queue by Submission Thread 1
+Job 133, Phases: 3, Phase Index: 3, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 6
+  Phase: 1, Type: IO, Duration: 6
+  Phase: 2, Type: CPU, Duration: 2
+Jobs processed: 103
+Job 143 put on CPU Queue by IO Thread 0
+Job 146 taken off of IO Queue by IO Thread 0
+Job 146 executing on IO Thread 0
+Job 143 taken off of CPU Queue by CPU Thread 7
+Job 143 executing on CPU Thread 7
+Job 138 put on Finished Queue by IO Thread 3
+Job 98 taken off of IO Queue by IO Thread 3
+Job 98 executing on IO Thread 3
+Job 138 taken off of Finished Queue by Submission Thread 2
+Job 138, Phases: 2, Phase Index: 2, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 6
+  Phase: 1, Type: IO, Duration: 4
+Jobs processed: 104
+Job 94 put on CPU Queue by IO Thread 1
+Job 88 taken off of IO Queue by IO Thread 1
+Job 88 executing on IO Thread 1
+Job 94 taken off of CPU Queue by CPU Thread 4
+Job 94 executing on CPU Thread 4
+Job 146 put on CPU Queue by IO Thread 0
+Job 143 put on Finished Queue by CPU Thread 7
+Job 143 taken off of Finished Queue by Submission Thread 3
+Job 143, Phases: 2, Phase Index: 2, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 5
+  Phase: 1, Type: CPU, Duration: 1
+Jobs processed: 105
+Job 146 taken off of CPU Queue by CPU Thread 5
+Job 146 executing on CPU Thread 5
+Job 147 taken off of IO Queue by IO Thread 0
+Job 147 executing on IO Thread 0
+Job 95 put on CPU Queue by IO Thread 2
+Job 144 taken off of IO Queue by IO Thread 2
+Job 144 executing on IO Thread 2
+Job 95 taken off of CPU Queue by CPU Thread 6
+Job 95 executing on CPU Thread 6
+Job 142 put on IO Queue by CPU Thread 3
+Job 147 put on Finished Queue by IO Thread 0
+Job 148 taken off of IO Queue by IO Thread 0
+Job 148 executing on IO Thread 0
+Job 147 taken off of Finished Queue by Submission Thread 1
+Job 147, Phases: 2, Phase Index: 2, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 2
+  Phase: 1, Type: IO, Duration: 3
+Jobs processed: 106
+Job 88 put on CPU Queue by IO Thread 1
+Job 149 taken off of IO Queue by IO Thread 1
+Job 149 executing on IO Thread 1
+Job 94 put on IO Queue by CPU Thread 4
+Job 88 taken off of CPU Queue by CPU Thread 4
+Job 88 executing on CPU Thread 4
+Job 146 put on Finished Queue by CPU Thread 5
+Job 146 taken off of Finished Queue by Submission Thread 2
+Job 146, Phases: 2, Phase Index: 2, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 1
+  Phase: 1, Type: CPU, Duration: 4
+Jobs processed: 107
+Job 148 put on CPU Queue by IO Thread 0
+Job 148 taken off of CPU Queue by CPU Thread 5
+Job 148 executing on CPU Thread 5
+Job 145 taken off of IO Queue by IO Thread 0
+Job 145 executing on IO Thread 0
+Job 98 put on CPU Queue by IO Thread 3
+Job 151 taken off of IO Queue by IO Thread 3
+Job 151 executing on IO Thread 3
+Job 98 taken off of CPU Queue by CPU Thread 2
+Job 98 executing on CPU Thread 2
+Job 144 put on CPU Queue by IO Thread 2
+Job 97 taken off of IO Queue by IO Thread 2
+Job 97 executing on IO Thread 2
+Job 144 taken off of CPU Queue by CPU Thread 3
+Job 144 executing on CPU Thread 3
+Job 151 put on CPU Queue by IO Thread 3
+Job 92 taken off of IO Queue by IO Thread 3
+Job 92 executing on IO Thread 3
+Job 151 taken off of CPU Queue by CPU Thread 0
+Job 151 executing on CPU Thread 0
+Job 88 put on Finished Queue by CPU Thread 4
+Job 88 taken off of Finished Queue by Submission Thread 2
+Job 88, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 6
+  Phase: 1, Type: IO, Duration: 4
+  Phase: 2, Type: CPU, Duration: 5
+  Phase: 3, Type: IO, Duration: 4
+  Phase: 4, Type: CPU, Duration: 2
+Jobs processed: 108
+Job 95 put on Finished Queue by CPU Thread 6
+Job 95 taken off of Finished Queue by Submission Thread 2
+Job 95, Phases: 4, Phase Index: 4, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 5
+  Phase: 1, Type: CPU, Duration: 1
+  Phase: 2, Type: IO, Duration: 5
+  Phase: 3, Type: CPU, Duration: 5
+Jobs processed: 109
+Job 98 put on IO Queue by CPU Thread 2
+Job 144 put on Finished Queue by CPU Thread 3
+Job 144 taken off of Finished Queue by Submission Thread 1
+Job 144, Phases: 3, Phase Index: 3, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 4
+  Phase: 1, Type: IO, Duration: 4
+  Phase: 2, Type: CPU, Duration: 2
+Jobs processed: 110
+Job 148 put on Finished Queue by CPU Thread 5
+Job 148 taken off of Finished Queue by Submission Thread 2
+Job 148, Phases: 2, Phase Index: 2, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 1
+  Phase: 1, Type: CPU, Duration: 4
+Jobs processed: 111
+Job 145 put on CPU Queue by IO Thread 0
+Job 152 taken off of IO Queue by IO Thread 0
+Job 152 executing on IO Thread 0
+Job 145 taken off of CPU Queue by CPU Thread 6
+Job 145 executing on CPU Thread 6
+Job 92 put on Finished Queue by IO Thread 3
+Job 150 taken off of IO Queue by IO Thread 3
+Job 150 executing on IO Thread 3
+Job 92 taken off of Finished Queue by Submission Thread 2
+Job 92, Phases: 4, Phase Index: 4, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 4
+  Phase: 1, Type: IO, Duration: 7
+  Phase: 2, Type: CPU, Duration: 6
+  Phase: 3, Type: IO, Duration: 5
+Jobs processed: 112
+Job 149 put on CPU Queue by IO Thread 1
+Job 100 taken off of IO Queue by IO Thread 1
+Job 100 executing on IO Thread 1
+Job 149 taken off of CPU Queue by CPU Thread 5
+Job 149 executing on CPU Thread 5
+Job 151 put on IO Queue by CPU Thread 0
+Job 97 put on Finished Queue by IO Thread 2
+Job 101 taken off of IO Queue by IO Thread 2
+Job 101 executing on IO Thread 2
+Job 97 taken off of Finished Queue by Submission Thread 1
+Job 97, Phases: 3, Phase Index: 3, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 7
+  Phase: 1, Type: CPU, Duration: 5
+  Phase: 2, Type: IO, Duration: 7
+Jobs processed: 113
+Job 145 put on IO Queue by CPU Thread 6
+Job 100 put on CPU Queue by IO Thread 1
+Job 100 taken off of CPU Queue by CPU Thread 0
+Job 100 executing on CPU Thread 0
+Job 103 taken off of IO Queue by IO Thread 1
+Job 103 executing on IO Thread 1
+Job 150 put on CPU Queue by IO Thread 3
+Job 150 taken off of CPU Queue by CPU Thread 3
+Job 150 executing on CPU Thread 3
+Job 105 taken off of IO Queue by IO Thread 3
+Job 105 executing on IO Thread 3
+Job 149 put on IO Queue by CPU Thread 5
+Job 152 put on CPU Queue by IO Thread 0
+Job 106 taken off of IO Queue by IO Thread 0
+Job 106 executing on IO Thread 0
+Job 152 taken off of CPU Queue by CPU Thread 2
+Job 152 executing on CPU Thread 2
+Job 101 put on CPU Queue by IO Thread 2
+Job 153 taken off of IO Queue by IO Thread 2
+Job 153 executing on IO Thread 2
+Job 101 taken off of CPU Queue by CPU Thread 4
+Job 101 executing on CPU Thread 4
+Job 100 put on Finished Queue by CPU Thread 0
+Job 103 put on Finished Queue by IO Thread 1
+Job 99 taken off of IO Queue by IO Thread 1
+Job 99 executing on IO Thread 1
+Job 100 taken off of Finished Queue by Submission Thread 3
+Job 100, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 2
+  Phase: 1, Type: IO, Duration: 6
+  Phase: 2, Type: CPU, Duration: 2
+  Phase: 3, Type: IO, Duration: 5
+  Phase: 4, Type: CPU, Duration: 5
+Jobs processed: 114
+Job 103 taken off of Finished Queue by Submission Thread 3
+Job 103, Phases: 3, Phase Index: 3, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 3
+  Phase: 1, Type: CPU, Duration: 4
+  Phase: 2, Type: IO, Duration: 5
+Jobs processed: 115
+Job 152 put on Finished Queue by CPU Thread 2
+Job 152 taken off of Finished Queue by Submission Thread 1
+Job 152, Phases: 2, Phase Index: 2, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 7
+  Phase: 1, Type: CPU, Duration: 4
+Jobs processed: 116
+Job 153 put on CPU Queue by IO Thread 2
+Job 154 taken off of IO Queue by IO Thread 2
+Job 154 executing on IO Thread 2
+Job 153 taken off of CPU Queue by CPU Thread 0
+Job 153 executing on CPU Thread 0
+Job 101 put on Finished Queue by CPU Thread 4
+Job 101 taken off of Finished Queue by Submission Thread 0
+Job 101, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 2
+  Phase: 1, Type: IO, Duration: 5
+  Phase: 2, Type: CPU, Duration: 5
+  Phase: 3, Type: IO, Duration: 7
+  Phase: 4, Type: CPU, Duration: 3
+Jobs processed: 117
+Job 150 put on Finished Queue by CPU Thread 3
+Job 150 taken off of Finished Queue by Submission Thread 0
+Job 150, Phases: 3, Phase Index: 3, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 6
+  Phase: 1, Type: IO, Duration: 6
+  Phase: 2, Type: CPU, Duration: 6
+Jobs processed: 118
+Job 105 put on CPU Queue by IO Thread 3
+Job 107 taken off of IO Queue by IO Thread 3
+Job 107 executing on IO Thread 3
+Job 105 taken off of CPU Queue by CPU Thread 3
+Job 105 executing on CPU Thread 3
+Job 99 put on CPU Queue by IO Thread 1
+Job 111 taken off of IO Queue by IO Thread 1
+Job 111 executing on IO Thread 1
+Job 99 taken off of CPU Queue by CPU Thread 5
+Job 99 executing on CPU Thread 5
+Job 105 put on Finished Queue by CPU Thread 3
+Job 105 taken off of Finished Queue by Submission Thread 0
+Job 105, Phases: 4, Phase Index: 4, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 3
+  Phase: 1, Type: CPU, Duration: 2
+  Phase: 2, Type: IO, Duration: 6
+  Phase: 3, Type: CPU, Duration: 1
+Jobs processed: 119
+Job 106 put on Finished Queue by IO Thread 0
+Job 155 taken off of IO Queue by IO Thread 0
+Job 155 executing on IO Thread 0
+Job 106 taken off of Finished Queue by Submission Thread 0
+Job 106, Phases: 3, Phase Index: 3, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 1
+  Phase: 1, Type: CPU, Duration: 2
+  Phase: 2, Type: IO, Duration: 7
+Jobs processed: 120
+Job 153 put on IO Queue by CPU Thread 0
+Job 111 put on CPU Queue by IO Thread 1
+Job 113 taken off of IO Queue by IO Thread 1
+Job 113 executing on IO Thread 1
+Job 111 taken off of CPU Queue by CPU Thread 4
+Job 111 executing on CPU Thread 4
+Job 107 put on CPU Queue by IO Thread 3
+Job 156 taken off of IO Queue by IO Thread 3
+Job 156 executing on IO Thread 3
+Job 107 taken off of CPU Queue by CPU Thread 2
+Job 107 executing on CPU Thread 2
+Job 99 put on Finished Queue by CPU Thread 5
+Job 99 taken off of Finished Queue by Submission Thread 2
+Job 99, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 6
+  Phase: 1, Type: IO, Duration: 1
+  Phase: 2, Type: CPU, Duration: 4
+  Phase: 3, Type: IO, Duration: 2
+  Phase: 4, Type: CPU, Duration: 4
+Jobs processed: 121
+Job 154 put on CPU Queue by IO Thread 2
+Job 74 taken off of IO Queue by IO Thread 2
+Job 74 executing on IO Thread 2
+Job 154 taken off of CPU Queue by CPU Thread 0
+Job 154 executing on CPU Thread 0
+Job 107 put on IO Queue by CPU Thread 2
+Job 74 put on Finished Queue by IO Thread 2
+Job 114 taken off of IO Queue by IO Thread 2
+Job 114 executing on IO Thread 2
+Job 74 taken off of Finished Queue by Submission Thread 1
+Job 74, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 3
+  Phase: 1, Type: CPU, Duration: 3
+  Phase: 2, Type: IO, Duration: 4
+  Phase: 3, Type: CPU, Duration: 3
+  Phase: 4, Type: IO, Duration: 3
+Jobs processed: 122
+Job 155 put on CPU Queue by IO Thread 0
+Job 110 taken off of IO Queue by IO Thread 0
+Job 110 executing on IO Thread 0
+Job 155 taken off of CPU Queue by CPU Thread 6
+Job 155 executing on CPU Thread 6
+Job 113 put on CPU Queue by IO Thread 1
+Job 157 taken off of IO Queue by IO Thread 1
+Job 157 executing on IO Thread 1
+Job 111 put on Finished Queue by CPU Thread 4
+Job 113 taken off of CPU Queue by CPU Thread 4
+Job 113 executing on CPU Thread 4
+Job 111 taken off of Finished Queue by Submission Thread 3
+Job 111, Phases: 4, Phase Index: 4, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 3
+  Phase: 1, Type: CPU, Duration: 6
+  Phase: 2, Type: IO, Duration: 3
+  Phase: 3, Type: CPU, Duration: 5
+Jobs processed: 123
+Job 156 put on CPU Queue by IO Thread 3
+Job 118 taken off of IO Queue by IO Thread 3
+Job 118 executing on IO Thread 3
+Job 156 taken off of CPU Queue by CPU Thread 3
+Job 156 executing on CPU Thread 3
+Job 157 put on CPU Queue by IO Thread 1
+Job 116 taken off of IO Queue by IO Thread 1
+Job 116 executing on IO Thread 1
+Job 157 taken off of CPU Queue by CPU Thread 2
+Job 157 executing on CPU Thread 2
+Job 110 put on Finished Queue by IO Thread 0
+Job 158 taken off of IO Queue by IO Thread 0
+Job 158 executing on IO Thread 0
+Job 110 taken off of Finished Queue by Submission Thread 1
+Job 110, Phases: 4, Phase Index: 4, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 6
+  Phase: 1, Type: IO, Duration: 4
+  Phase: 2, Type: CPU, Duration: 2
+  Phase: 3, Type: IO, Duration: 3
+Jobs processed: 124
+Job 155 put on IO Queue by CPU Thread 6
+Job 154 put on IO Queue by CPU Thread 0
+Job 118 put on CPU Queue by IO Thread 3
+Job 115 taken off of IO Queue by IO Thread 3
+Job 115 executing on IO Thread 3
+Job 156 put on IO Queue by CPU Thread 3
+Job 118 taken off of CPU Queue by CPU Thread 3
+Job 118 executing on CPU Thread 3
+Job 114 put on Finished Queue by IO Thread 2
+Job 119 taken off of IO Queue by IO Thread 2
+Job 119 executing on IO Thread 2
+Job 114 taken off of Finished Queue by Submission Thread 3
+Job 114, Phases: 3, Phase Index: 3, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 5
+  Phase: 1, Type: CPU, Duration: 3
+  Phase: 2, Type: IO, Duration: 6
+Jobs processed: 125
+Job 116 put on CPU Queue by IO Thread 1
+Job 120 taken off of IO Queue by IO Thread 1
+Job 120 executing on IO Thread 1
+Job 116 taken off of CPU Queue by CPU Thread 1
+Job 116 executing on CPU Thread 1
+Job 157 put on Finished Queue by CPU Thread 2
+Job 157 taken off of Finished Queue by Submission Thread 1
+Job 157, Phases: 3, Phase Index: 3, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 2
+  Phase: 1, Type: IO, Duration: 2
+  Phase: 2, Type: CPU, Duration: 4
+Jobs processed: 126
+Job 113 put on IO Queue by CPU Thread 4
+Job 158 put on CPU Queue by IO Thread 0
+Job 159 taken off of IO Queue by IO Thread 0
+Job 159 executing on IO Thread 0
+Job 158 taken off of CPU Queue by CPU Thread 7
+Job 158 executing on CPU Thread 7
+Job 115 put on Finished Queue by IO Thread 3
+Job 122 taken off of IO Queue by IO Thread 3
+Job 122 executing on IO Thread 3
+Job 115 taken off of Finished Queue by Submission Thread 0
+Job 115, Phases: 4, Phase Index: 4, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 6
+  Phase: 1, Type: IO, Duration: 2
+  Phase: 2, Type: CPU, Duration: 6
+  Phase: 3, Type: IO, Duration: 3
+Jobs processed: 127
+Job 158 put on IO Queue by CPU Thread 7
+Job 118 put on Finished Queue by CPU Thread 3
+Job 118 taken off of Finished Queue by Submission Thread 1
+Job 118, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 2
+  Phase: 1, Type: IO, Duration: 2
+  Phase: 2, Type: CPU, Duration: 5
+  Phase: 3, Type: IO, Duration: 4
+  Phase: 4, Type: CPU, Duration: 5
+Jobs processed: 128
+Job 120 put on CPU Queue by IO Thread 1
+Job 119 put on Finished Queue by IO Thread 2
+Job 119 taken off of Finished Queue by Submission Thread 3
+Job 125 taken off of IO Queue by IO Thread 2
+Job 125 executing on IO Thread 2
+Job 80 taken off of IO Queue by IO Thread 1
+Job 80 executing on IO Thread 1
+Job 119, Phases: 4, Phase Index: 4, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 2
+  Phase: 1, Type: IO, Duration: 5
+  Phase: 2, Type: CPU, Duration: 5
+  Phase: 3, Type: IO, Duration: 6
+Jobs processed: 129
+Job 120 taken off of CPU Queue by CPU Thread 3
+Job 120 executing on CPU Thread 3
+Job 116 put on IO Queue by CPU Thread 1
+Job 159 put on CPU Queue by IO Thread 0
+Job 128 taken off of IO Queue by IO Thread 0
+Job 128 executing on IO Thread 0
+Job 159 taken off of CPU Queue by CPU Thread 4
+Job 159 executing on CPU Thread 4
+Job 122 put on CPU Queue by IO Thread 3
+Job 123 taken off of IO Queue by IO Thread 3
+Job 123 executing on IO Thread 3
+Job 122 taken off of CPU Queue by CPU Thread 2
+Job 122 executing on CPU Thread 2
+Job 80 put on Finished Queue by IO Thread 1
+Job 85 taken off of IO Queue by IO Thread 1
+Job 85 executing on IO Thread 1
+Job 80 taken off of Finished Queue by Submission Thread 2
+Job 80, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 1
+  Phase: 1, Type: CPU, Duration: 2
+  Phase: 2, Type: IO, Duration: 7
+  Phase: 3, Type: CPU, Duration: 7
+  Phase: 4, Type: IO, Duration: 2
+Jobs processed: 130
+Job 122 put on Finished Queue by CPU Thread 2
+Job 122 taken off of Finished Queue by Submission Thread 2
+Job 122, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 2
+  Phase: 1, Type: IO, Duration: 2
+  Phase: 2, Type: CPU, Duration: 4
+  Phase: 3, Type: IO, Duration: 5
+  Phase: 4, Type: CPU, Duration: 2
+Jobs processed: 131
+Job 123 put on Finished Queue by IO Thread 3
+Job 126 taken off of IO Queue by IO Thread 3
+Job 126 executing on IO Thread 3
+Job 123 taken off of Finished Queue by Submission Thread 1
+Job 123, Phases: 4, Phase Index: 4, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 4
+  Phase: 1, Type: IO, Duration: 3
+  Phase: 2, Type: CPU, Duration: 6
+  Phase: 3, Type: IO, Duration: 3
+Jobs processed: 132
+Job 125 put on Finished Queue by IO Thread 2
+Job 130 taken off of IO Queue by IO Thread 2
+Job 130 executing on IO Thread 2
+Job 125 taken off of Finished Queue by Submission Thread 2
+Job 125, Phases: 3, Phase Index: 3, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 3
+  Phase: 1, Type: CPU, Duration: 1
+  Phase: 2, Type: IO, Duration: 5
+Jobs processed: 133
+Job 120 put on Finished Queue by CPU Thread 3
+Job 120 taken off of Finished Queue by Submission Thread 1
+Job 120, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 2
+  Phase: 1, Type: IO, Duration: 3
+  Phase: 2, Type: CPU, Duration: 7
+  Phase: 3, Type: IO, Duration: 5
+  Phase: 4, Type: CPU, Duration: 6
+Jobs processed: 134
+Job 128 put on Finished Queue by IO Thread 0
+Job 133 taken off of IO Queue by IO Thread 0
+Job 133 executing on IO Thread 0
+Job 128 taken off of Finished Queue by Submission Thread 1
+Job 128, Phases: 3, Phase Index: 3, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 3
+  Phase: 1, Type: CPU, Duration: 2
+  Phase: 2, Type: IO, Duration: 5
+Jobs processed: 135
+Job 159 put on IO Queue by CPU Thread 4
+Job 85 put on Finished Queue by IO Thread 1
+Job 89 taken off of IO Queue by IO Thread 1
+Job 89 executing on IO Thread 1
+Job 85 taken off of Finished Queue by Submission Thread 2
+Job 85, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 7
+  Phase: 1, Type: CPU, Duration: 1
+  Phase: 2, Type: IO, Duration: 3
+  Phase: 3, Type: CPU, Duration: 1
+  Phase: 4, Type: IO, Duration: 6
+Jobs processed: 136
+Job 130 put on CPU Queue by IO Thread 2
+Job 87 taken off of IO Queue by IO Thread 2
+Job 87 executing on IO Thread 2
+Job 89 put on Finished Queue by IO Thread 1
+Job 135 taken off of IO Queue by IO Thread 1
+Job 135 executing on IO Thread 1
+Job 89 taken off of Finished Queue by Submission Thread 2
+Job 89, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 1
+  Phase: 1, Type: CPU, Duration: 3
+  Phase: 2, Type: IO, Duration: 2
+  Phase: 3, Type: CPU, Duration: 3
+  Phase: 4, Type: IO, Duration: 1
+Jobs processed: 137
+Job 130 taken off of CPU Queue by CPU Thread 6
+Job 130 executing on CPU Thread 6
+Job 126 put on CPU Queue by IO Thread 3
+Job 129 taken off of IO Queue by IO Thread 3
+Job 129 executing on IO Thread 3
+Job 126 taken off of CPU Queue by CPU Thread 7
+Job 126 executing on CPU Thread 7
+Job 87 put on Finished Queue by IO Thread 2
+Job 141 taken off of IO Queue by IO Thread 2
+Job 141 executing on IO Thread 2
+Job 87 taken off of Finished Queue by Submission Thread 2
+Job 87, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 3
+  Phase: 1, Type: CPU, Duration: 3
+  Phase: 2, Type: IO, Duration: 3
+  Phase: 3, Type: CPU, Duration: 2
+  Phase: 4, Type: IO, Duration: 2
+Jobs processed: 138
+Job 133 put on CPU Queue by IO Thread 0
+Job 140 taken off of IO Queue by IO Thread 0
+Job 140 executing on IO Thread 0
+Job 133 taken off of CPU Queue by CPU Thread 0
+Job 133 executing on CPU Thread 0
+Job 130 put on Finished Queue by CPU Thread 6
+Job 130 taken off of Finished Queue by Submission Thread 3
+Job 130, Phases: 4, Phase Index: 4, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 7
+  Phase: 1, Type: CPU, Duration: 2
+  Phase: 2, Type: IO, Duration: 4
+  Phase: 3, Type: CPU, Duration: 3
+Jobs processed: 139
+Job 133 put on IO Queue by CPU Thread 0
+Job 141 put on CPU Queue by IO Thread 2
+Job 142 taken off of IO Queue by IO Thread 2
+Job 142 executing on IO Thread 2
+Job 141 taken off of CPU Queue by CPU Thread 0
+Job 141 executing on CPU Thread 0
+Job 126 put on Finished Queue by CPU Thread 7
+Job 126 taken off of Finished Queue by Submission Thread 2
+Job 126, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 6
+  Phase: 1, Type: IO, Duration: 3
+  Phase: 2, Type: CPU, Duration: 2
+  Phase: 3, Type: IO, Duration: 5
+  Phase: 4, Type: CPU, Duration: 4
+Jobs processed: 140
+Job 135 put on CPU Queue by IO Thread 1
+Job 135 taken off of CPU Queue by CPU Thread 5
+Job 135 executing on CPU Thread 5
+Job 94 taken off of IO Queue by IO Thread 1
+Job 94 executing on IO Thread 1
+Job 135 put on Finished Queue by CPU Thread 5
+Job 94 put on Finished Queue by IO Thread 1
+Job 98 taken off of IO Queue by IO Thread 1
+Job 98 executing on IO Thread 1
+Job 141 put on IO Queue by CPU Thread 0
+Job 135 taken off of Finished Queue by Submission Thread 1
+Job 135, Phases: 4, Phase Index: 4, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 7
+  Phase: 1, Type: CPU, Duration: 2
+  Phase: 2, Type: IO, Duration: 5
+  Phase: 3, Type: CPU, Duration: 1
+Jobs processed: 141
+Job 94 taken off of Finished Queue by Submission Thread 1
+Job 94, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 7
+  Phase: 1, Type: CPU, Duration: 5
+  Phase: 2, Type: IO, Duration: 5
+  Phase: 3, Type: CPU, Duration: 4
+  Phase: 4, Type: IO, Duration: 1
+Jobs processed: 142
+Job 129 put on CPU Queue by IO Thread 3
+Job 151 taken off of IO Queue by IO Thread 3
+Job 151 executing on IO Thread 3
+Job 129 taken off of CPU Queue by CPU Thread 1
+Job 129 executing on CPU Thread 1
+Job 129 put on Finished Queue by CPU Thread 1
+Job 129 taken off of Finished Queue by Submission Thread 2
+Job 129, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 2
+  Phase: 1, Type: IO, Duration: 7
+  Phase: 2, Type: CPU, Duration: 7
+  Phase: 3, Type: IO, Duration: 6
+  Phase: 4, Type: CPU, Duration: 1
+Jobs processed: 143
+Job 142 put on CPU Queue by IO Thread 2
+Job 145 taken off of IO Queue by IO Thread 2
+Job 145 executing on IO Thread 2
+Job 142 taken off of CPU Queue by CPU Thread 2
+Job 142 executing on CPU Thread 2
+Job 140 put on Finished Queue by IO Thread 0
+Job 149 taken off of IO Queue by IO Thread 0
+Job 149 executing on IO Thread 0
+Job 140 taken off of Finished Queue by Submission Thread 0
+Job 140, Phases: 3, Phase Index: 3, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 7
+  Phase: 1, Type: CPU, Duration: 3
+  Phase: 2, Type: IO, Duration: 6
+Jobs processed: 144
+Job 151 put on CPU Queue by IO Thread 3
+Job 153 taken off of IO Queue by IO Thread 3
+Job 153 executing on IO Thread 3
+Job 151 taken off of CPU Queue by CPU Thread 7
+Job 151 executing on CPU Thread 7
+Job 145 put on Finished Queue by IO Thread 2
+Job 107 taken off of IO Queue by IO Thread 2
+Job 107 executing on IO Thread 2
+Job 145 taken off of Finished Queue by Submission Thread 2
+Job 145, Phases: 4, Phase Index: 4, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 4
+  Phase: 1, Type: IO, Duration: 6
+  Phase: 2, Type: CPU, Duration: 4
+  Phase: 3, Type: IO, Duration: 2
+Jobs processed: 145
+Job 151 put on IO Queue by CPU Thread 7
+Job 107 put on Finished Queue by IO Thread 2
+Job 155 taken off of IO Queue by IO Thread 2
+Job 155 executing on IO Thread 2
+Job 107 taken off of Finished Queue by Submission Thread 3
+Job 107, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 7
+  Phase: 1, Type: CPU, Duration: 1
+  Phase: 2, Type: IO, Duration: 4
+  Phase: 3, Type: CPU, Duration: 2
+  Phase: 4, Type: IO, Duration: 1
+Jobs processed: 146
+Job 149 put on CPU Queue by IO Thread 0
+Job 154 taken off of IO Queue by IO Thread 0
+Job 154 executing on IO Thread 0
+Job 149 taken off of CPU Queue by CPU Thread 7
+Job 149 executing on CPU Thread 7
+Job 154 put on CPU Queue by IO Thread 0
+Job 154 taken off of CPU Queue by CPU Thread 5
+Job 154 executing on CPU Thread 5
+Job 156 taken off of IO Queue by IO Thread 0
+Job 156 executing on IO Thread 0
+Job 149 put on IO Queue by CPU Thread 7
+Job 98 put on Finished Queue by IO Thread 1
+Job 113 taken off of IO Queue by IO Thread 1
+Job 113 executing on IO Thread 1
+Job 98 taken off of Finished Queue by Submission Thread 2
+Job 98, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 1
+  Phase: 1, Type: CPU, Duration: 1
+  Phase: 2, Type: IO, Duration: 5
+  Phase: 3, Type: CPU, Duration: 2
+Job 142 put on Finished Queue by CPU Thread 2
+Job 142 taken off of Finished Queue by Submission Thread 0
+Job 142, Phases: 4, Phase Index: 4, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 1
+  Phase: 1, Type: CPU, Duration: 7
+  Phase: 2, Type: IO, Duration: 4
+  Phase: 3, Type: CPU, Duration: 5
+Jobs processed: 147
+  Phase: 4, Type: IO, Duration: 7
+Jobs processed: 148
+Job 156 put on CPU Queue by IO Thread 0
+Job 158 taken off of IO Queue by IO Thread 0
+Job 158 executing on IO Thread 0
+Job 156 taken off of CPU Queue by CPU Thread 1
+Job 156 executing on CPU Thread 1
+Job 153 put on CPU Queue by IO Thread 3
+Job 116 taken off of IO Queue by IO Thread 3
+Job 116 executing on IO Thread 3
+Job 153 taken off of CPU Queue by CPU Thread 0
+Job 153 executing on CPU Thread 0
+Job 113 put on Finished Queue by IO Thread 1
+Job 159 taken off of IO Queue by IO Thread 1
+Job 159 executing on IO Thread 1
+Job 113 taken off of Finished Queue by Submission Thread 2
+Job 113, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 7
+  Phase: 1, Type: CPU, Duration: 3
+  Phase: 2, Type: IO, Duration: 5
+  Phase: 3, Type: CPU, Duration: 7
+  Phase: 4, Type: IO, Duration: 2
+Jobs processed: 149
+Job 154 put on IO Queue by CPU Thread 5
+Job 116 put on Finished Queue by IO Thread 3
+Job 133 taken off of IO Queue by IO Thread 3
+Job 133 executing on IO Thread 3
+Job 116 taken off of Finished Queue by Submission Thread 3
+Job 116, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 7
+  Phase: 1, Type: CPU, Duration: 6
+  Phase: 2, Type: IO, Duration: 4
+  Phase: 3, Type: CPU, Duration: 6
+  Phase: 4, Type: IO, Duration: 1
+Jobs processed: 150
+Job 158 put on Finished Queue by IO Thread 0
+Job 141 taken off of IO Queue by IO Thread 0
+Job 141 executing on IO Thread 0
+Job 158 taken off of Finished Queue by Submission Thread 2
+Job 158, Phases: 4, Phase Index: 4, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 2
+  Phase: 1, Type: IO, Duration: 5
+  Phase: 2, Type: CPU, Duration: 2
+  Phase: 3, Type: IO, Duration: 4
+Jobs processed: 151
+Job 153 put on IO Queue by CPU Thread 0
+Job 155 put on CPU Queue by IO Thread 2
+Job 151 taken off of IO Queue by IO Thread 2
+Job 151 executing on IO Thread 2
+Job 155 taken off of CPU Queue by CPU Thread 7
+Job 155 executing on CPU Thread 7
+Job 159 put on CPU Queue by IO Thread 1
+Job 149 taken off of IO Queue by IO Thread 1
+Job 149 executing on IO Thread 1
+Job 159 taken off of CPU Queue by CPU Thread 4
+Job 159 executing on CPU Thread 4
+Job 151 put on Finished Queue by IO Thread 2
+Job 154 taken off of IO Queue by IO Thread 2
+Job 154 executing on IO Thread 2
+Job 155 put on Finished Queue by CPU Thread 7
+Job 151 taken off of Finished Queue by Submission Thread 0
+Job 151, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 1
+  Phase: 1, Type: CPU, Duration: 6
+  Phase: 2, Type: IO, Duration: 2
+  Phase: 3, Type: CPU, Duration: 2
+  Phase: 4, Type: IO, Duration: 1
+Jobs processed: 152
+Job 155 taken off of Finished Queue by Submission Thread 0
+Job 155, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: CPU, Duration: 2
+  Phase: 1, Type: IO, Duration: 6
+  Phase: 2, Type: CPU, Duration: 3
+  Phase: 3, Type: IO, Duration: 7
+  Phase: 4, Type: CPU, Duration: 1
+Jobs processed: 153
+Job 141 put on Finished Queue by IO Thread 0
+Job 153 taken off of IO Queue by IO Thread 0
+Job 153 executing on IO Thread 0
+Job 141 taken off of Finished Queue by Submission Thread 3
+Job 141, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 1
+  Phase: 1, Type: CPU, Duration: 2
+  Phase: 2, Type: IO, Duration: 2
+  Phase: 3, Type: CPU, Duration: 2
+  Phase: 4, Type: IO, Duration: 2
+Jobs processed: 154
+Job 156 put on IO Queue by CPU Thread 1
+Job 149 put on Finished Queue by IO Thread 1
+Job 156 taken off of IO Queue by IO Thread 1
+Job 156 executing on IO Thread 1
+Job 159 put on IO Queue by CPU Thread 4
+Job 154 put on Finished Queue by IO Thread 2
+Job 159 taken off of IO Queue by IO Thread 2
+Job 159 executing on IO Thread 2
+Job 149 taken off of Finished Queue by Submission Thread 0
+Job 149, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 7
+  Phase: 1, Type: CPU, Duration: 6
+  Phase: 2, Type: IO, Duration: 3
+  Phase: 3, Type: CPU, Duration: 1
+  Phase: 4, Type: IO, Duration: 3
+Jobs processed: 155
+Job 154 taken off of Finished Queue by Submission Thread 0
+Job 154, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 5
+  Phase: 1, Type: CPU, Duration: 7
+  Phase: 2, Type: IO, Duration: 1
+  Phase: 3, Type: CPU, Duration: 3
+  Phase: 4, Type: IO, Duration: 3
+Jobs processed: 156
+Job 133 put on Finished Queue by IO Thread 3
+Job 133 taken off of Finished Queue by Submission Thread 3
+Job 133, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 3
+  Phase: 1, Type: CPU, Duration: 1
+  Phase: 2, Type: IO, Duration: 5
+  Phase: 3, Type: CPU, Duration: 1
+  Phase: 4, Type: IO, Duration: 7
+Jobs processed: 157
+Job 156 put on Finished Queue by IO Thread 1
+Job 156 taken off of Finished Queue by Submission Thread 1
+Job 156, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 5
+  Phase: 1, Type: CPU, Duration: 4
+  Phase: 2, Type: IO, Duration: 1
+  Phase: 3, Type: CPU, Duration: 7
+  Phase: 4, Type: IO, Duration: 3
+Jobs processed: 158
+Job 153 put on Finished Queue by IO Thread 0
+Job 153 taken off of Finished Queue by Submission Thread 0
+Job 153, Phases: 5, Phase Index: 5, Remaining: -1, Completed: Yes
+  Phase: 0, Type: IO, Duration: 3
+  Phase: 1, Type: CPU, Duration: 3
+  Phase: 2, Type: IO, Duration: 6
+  Phase: 3, Type: CPU, Duration: 3
+  Phase: 4, Type: IO, Duration: 6
+Jobs processed: 159
+Job 159 put on Finished Queue by IO Thread 2
+All threads complete.
+
