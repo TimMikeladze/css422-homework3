@@ -155,16 +155,14 @@ void waitForThreads(pthread_t threads[]) {
 
 Job createRandomJob() {
 	int numberOfPhases = generateRandom(MIN_NUMBER_OF_PHASES, MAX_NUMBER_OF_PHASES);
-
 	Phase phases[numberOfPhases];
 	int i = 0;
 	PhaseType type;
+
 	for (i = 0; i < numberOfPhases; i++) {
 		int duration = generateRandom(1, MAX_DURATION);
 		Phase phase;
-
 		phase.duration = duration;
-
 		if (type == CPU_PHASE) {
 			type = IO_PHASE;
 		} else if (type == IO_PHASE) {
@@ -173,12 +171,13 @@ Job createRandomJob() {
 			type = duration % 2 == 0 ? CPU_PHASE : IO_PHASE;
 		}
 		phase.type = type;
-
 		phases[i] = phase;
 	}
+
 	Job job = createJob(phases, numberOfPhases);
 	printf("Created Job %d\n", job.id);
 	job.printJob(&job);
+
 	return job;
 }
 
