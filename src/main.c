@@ -14,7 +14,7 @@
 #define MAX_DURATION 7
 #define MIN_CREATION_RATE 3
 #define MAX_CREATION_RATE 4
-#define MAX_JOBS_PER_THREAD 5
+#define MAX_JOBS_PER_THREAD 40
 
 void createQueues();
 void setupThreads();
@@ -56,6 +56,7 @@ int main(void) {
 	waitForThreads(ioThreads);
 	waitForThreads(submissionThreads);
 
+	sleep(1);
 	printf("All threads complete.\n");
 
 	cleanupThreads();
