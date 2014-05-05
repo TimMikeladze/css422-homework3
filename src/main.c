@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <time.h>
+#include <signal.h>
 #include "queue.h"
 
 #define NUMBER_OF_CPU_THREADS 8
@@ -13,7 +14,7 @@
 #define MAX_DURATION 7
 #define MIN_CREATION_RATE 3
 #define MAX_CREATION_RATE 4
-#define MAX_JOBS_PER_THREAD 40
+#define MAX_JOBS_PER_THREAD 5
 
 void createQueues();
 void setupThreads();
@@ -27,13 +28,13 @@ void *submissionThread(void *args);
 int currentTime();
 int generateRandom(int min, int max);
 
-pthread_mutex_t count_mutex;
-pthread_cond_t count_threshold_conditionvar;
 pthread_attr_t attr;
 
 Queue cpuQueue;
 Queue ioQueue;
 Queue finishedQueue;
+
+int jobCounter;
 
 pthread_t cpuThreads[NUMBER_OF_CPU_THREADS];
 pthread_t ioThreads[NUMBER_OF_IO_THREADS];
@@ -70,7 +71,7 @@ void createThreads(void *function, pthread_t threads[], int amount) {
 }
 
 void *cpuThread(void *args) {
-	while (true) {
+	while (jobCounter != MAX_JOBS_PER_THREAD * NUMBER_OF_SUBMISSION_THREADS - 1) {
 		if (cpuQueue.getSize(&cpuQueue) > 0) {
 			Job job = cpuQueue.dequeue(&cpuQueue);
 			printf("Job %d taken off of CPU Queue by CPU Thread %d\n", job.id, args);
@@ -90,7 +91,7 @@ void *cpuThread(void *args) {
 }
 
 void *ioThread(void *args) {
-	while (true) {
+	while (jobCounter != MAX_JOBS_PER_THREAD * NUMBER_OF_SUBMISSION_THREADS - 1) {
 		if (ioQueue.getSize(&ioQueue) > 0) {
 			Job job = ioQueue.dequeue(&ioQueue);
 			printf("Job %d taken off of IO Queue by IO Thread %d\n", job.id, args);
@@ -106,6 +107,9 @@ void *ioThread(void *args) {
 				finishedQueue.enqueue(&finishedQueue, job);
 			}
 		}
+		if (jobCounter == MAX_JOBS_PER_THREAD * NUMBER_OF_SUBMISSION_THREADS - 1) {
+			break;
+		}
 	}
 }
 
@@ -115,7 +119,7 @@ void *submissionThread(void *args) {
 
 	int t = currentTime();
 	int i = 0;
-	while (true) {
+	while (jobCounter != MAX_JOBS_PER_THREAD * NUMBER_OF_SUBMISSION_THREADS - 1) {
 		if (currentTime() > t + rate && i < MAX_JOBS_PER_THREAD) {
 			t = currentTime();
 			Job job = createRandomJob();
@@ -132,6 +136,11 @@ void *submissionThread(void *args) {
 			if (finishedQueue.getSize(&finishedQueue) > 0) {
 				Job job = finishedQueue.dequeue(&finishedQueue);
 				printf("Job %d taken off of Finished Queue by Submission Thread %d\n", job.id, args);
+				jobCounter++;
+				printf("Jobs processed: %d\n", jobCounter);
+				if (jobCounter == MAX_JOBS_PER_THREAD * NUMBER_OF_SUBMISSION_THREADS - 1) {
+					break;
+				}
 			}
 		}
 	}
@@ -145,8 +154,6 @@ void createQueues() {
 }
 
 void setupThreads() {
-	pthread_mutex_init(&count_mutex, NULL);
-	pthread_cond_init(&count_threshold_conditionvar, NULL);
 	pthread_attr_init(&attr);
 	pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_JOINABLE);
 }
@@ -161,8 +168,6 @@ void waitForThreads(pthread_t threads[]) {
 
 void cleanupThreads() {
 	pthread_attr_destroy(&attr);
-	pthread_mutex_destroy(&count_mutex);
-	pthread_cond_destroy(&count_threshold_conditionvar);
 	pthread_exit(NULL);
 }
 
