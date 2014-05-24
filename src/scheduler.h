@@ -11,17 +11,17 @@ typedef struct Scheduler {
 	int id;
 	pthread_t thread;
 	Queue queue;
+	int quantum;
 
-	void (*cpuThread)(struct Scheduler*);
-	int (*getID)(struct Scheduler*);
-	Queue (*getQueue)(struct Scheduler*);
+	Queue *ioQueue;
+	Queue *finishedQueue;
+
+	void (*worker)(struct Scheduler*);
 
 } Scheduler;
 
-Scheduler createScheduler();
+Scheduler createScheduler(int quantum, Queue *ioQueue, Queue *finishedQueue);
 
-void cpuThread(Scheduler *scheduler);
-int getID(Scheduler *scheduler);
-Queue getQueue(Scheduler *scheduler);
+void worker(Scheduler *scheduler);
 
 #endif

@@ -1,6 +1,6 @@
 #include "job.h"
 
-Job createJob(Phase phases[], int numberOfPhases) {
+Job createJob(int schedulerID, Phase phases[], int numberOfPhases) {
 	static int id = 0;
 
 	Job job;
@@ -10,6 +10,7 @@ Job createJob(Phase phases[], int numberOfPhases) {
 	job.finished = false;
 	job.phaseIndex = 0;
 	job.numberOfPhases = numberOfPhases;
+	job.schedulerID = schedulerID;
 
 	job.printJob = &printJob;
 	job.nextPhase = &nextPhase;

@@ -8,6 +8,8 @@ typedef enum {
 typedef struct Phase {
 	PhaseType type;
 	int duration;
+
 } Phase;
+
 
 #endif
