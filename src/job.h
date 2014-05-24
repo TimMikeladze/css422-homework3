@@ -1,3 +1,6 @@
+#ifndef JOB_H_
+#define JOB_H_
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
@@ -22,3 +25,5 @@ Job createJob(Phase phases[], int numberOfPhases);
 void printJob(Job *job);
 void nextPhase(Job *job);
 Phase currentPhase(Job *job);
+
+#endif

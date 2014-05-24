@@ -1,3 +1,6 @@
+#ifndef QUEUE_H_
+#define QUEUE_H_
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
@@ -29,3 +32,7 @@ Job peek(Queue *queue);
 void printQueue(Queue *queue);
 void wait(Queue *queue);
 int getSize(Queue *queue);
+
+#endif
+
+
