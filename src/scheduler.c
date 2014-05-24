@@ -23,7 +23,7 @@ Scheduler createScheduler() {
 }
 
 int getID(Scheduler *scheduler) {
-
+	return scheduler->id;
 }
 
 void cpuThread(Scheduler *scheduler) {
