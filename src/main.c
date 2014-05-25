@@ -44,16 +44,22 @@ int main(void) {
 	srand(time(NULL));
 
 	createQueues();
-	createSchedulers();
-
 	setupThreads();
 
-	createThreads(ioThread, ioThreads, NUMBER_OF_IO_THREADS);
+	createSchedulers();
+	puts("passed");
+	//createThreads(ioThread, ioThreads, NUMBER_OF_IO_THREADS);
 	createThreads(submissionThread, submissionThreads, NUMBER_OF_SUBMISSION_THREADS);
 
-	waitForThreads(ioThreads);
+	//waitForThreads(ioThreads);
 	waitForThreads(submissionThreads);
 
+	/*
+	int i = 0;
+	for (i = 0; i < NUMBER_OF_SCHEDULERS; i++) {
+		pthread_join(schedulers[i].thread, NULL);
+	}
+	*/
 
 	return EXIT_SUCCESS;
 }
@@ -108,12 +114,14 @@ void *submissionThread(int threadID) {
 			//job.printJob(&job);
 			if (job.currentPhase(&job).type == CPU_PHASE) {
 				schedulers[job.id].queue.enqueue(&schedulers[job.id].queue, job);
+				puts("going to cpu");
 				printf("Job %d put on Scheduler %d by Submission Thread %d\n", job.id, schedulers[job.id].id, threadID);
 			} else if (job.currentPhase(&job).type == IO_PHASE) {
 				ioQueue.enqueue(&ioQueue, job);
 				printf("Job %d put on IO Queue by Submission Thread %d\n", job.id, threadID);
 			}
 			i++;
+			printf("Job counter %d\n", jobCounter);
 		} else {
 			if (finishedQueue.getSize(&finishedQueue) > 0) {
 				Job job = finishedQueue.dequeue(&finishedQueue);
@@ -165,7 +173,8 @@ Job createRandomJob() {
 		} else {
 			type = duration % 2 == 0 ? CPU_PHASE : IO_PHASE;
 		}
-		phase.type = type;
+		//TODO remove
+		phase.type = CPU_PHASE;
 		phases[i] = phase;
 	}
 

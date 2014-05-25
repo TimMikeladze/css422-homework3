@@ -22,6 +22,6 @@ typedef struct Scheduler {
 
 Scheduler createScheduler(int quantum, Queue *ioQueue, Queue *finishedQueue);
 
-void worker(Scheduler *scheduler);
+void *worker(void *arguments);
 
 #endif

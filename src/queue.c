@@ -45,6 +45,7 @@ void enqueue(Queue *queue, Job job) {
 
 Job dequeue(Queue *queue) {
 	wait(queue);
+
 	queue->locked = true;
 
 	Node *head = queue->head;
