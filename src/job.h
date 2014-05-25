@@ -1,6 +1,3 @@
-#ifndef JOB_H_
-#define JOB_H_
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
@@ -15,16 +12,14 @@ typedef struct Job {
 	bool finished;
 	int phaseIndex;
 	int numberOfPhases;
-	int schedulerID;
+	int scheduleID;
 
 	void (*printJob)(struct Job*);
 	void (*nextPhase)(struct Job*);
-	Phase (*currentPhase)(struct Job*);
+	Phase *(*currentPhase)(struct Job*);
 } Job;
 
-Job createJob(int schedulerID, Phase phases[], int numberOfPhases);
+Job createJob(int scheduleID, Phase phases[], int numberOfPhases);
 void printJob(Job *job);
 void nextPhase(Job *job);
-Phase currentPhase(Job *job);
-
-#endif
+Phase *currentPhase(Job *job);

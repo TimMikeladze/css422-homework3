@@ -1,16 +1,16 @@
 #include "job.h"
 
-Job createJob(int schedulerID, Phase phases[], int numberOfPhases) {
+Job createJob(int scheduleID, Phase phases[], int numberOfPhases) {
 	static int id = 0;
 
 	Job job;
 
 	job.id = id;
+	job.scheduleID = scheduleID;
 	memcpy(job.phases, phases, sizeof(job.phases));
 	job.finished = false;
 	job.phaseIndex = 0;
 	job.numberOfPhases = numberOfPhases;
-	job.schedulerID = schedulerID;
 
 	job.printJob = &printJob;
 	job.nextPhase = &nextPhase;
@@ -37,9 +37,9 @@ void nextPhase(Job *job) {
 	job->finished = job->phaseIndex == job->numberOfPhases ? true : false;
 }
 
-Phase currentPhase(Job *job) {
+Phase *currentPhase(Job *job) {
 	Phase finishedPhase;
 	finishedPhase.duration = 0;
 	finishedPhase.type = FINISHED_PHASE;
-	return job->finished == true ? finishedPhase : job->phases[job->phaseIndex];
+	return job->finished == true ? &finishedPhase : &job->phases[job->phaseIndex];
 }
